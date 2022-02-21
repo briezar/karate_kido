@@ -1,154 +1,67 @@
-2022-02-21 14:37:14-log: [Package] menu@1.0.0 enable
-2022-02-21 14:37:14-log: [Package] profile@1.0.0 enable
-2022-02-21 14:37:14-log: [Package] project@1.0.1 enable
-2022-02-21 14:37:14-log: [Package] messages@1.0.0 enable
-2022-02-21 14:37:14-log: [Package] program@1.0.0 enable
-2022-02-21 14:37:14-log: [Package] device@1.0.1 enable
-2022-02-21 14:37:14-log: [Package] ui-kit@1.0.1 enable
-2022-02-21 14:37:14-log: [Package] tester@1.0.0 enable
-2022-02-21 14:37:14-log: [Package] preferences@1.0.0 enable
-2022-02-21 14:37:15-log: Setup mods mgr.: 370.195ms
-2022-02-21 14:37:15-log: [Package] engine@1.0.5 enable
-2022-02-21 14:37:19-log: [Package] programming@1.0.0 enable
-2022-02-21 14:37:20-log: [Package] engine-extends@1.0.0 enable
-2022-02-21 14:37:20-log: [Package] asset-db@1.0.0 enable
-2022-02-21 14:37:20-log: [Package] console@1.0.0 enable
-2022-02-21 14:37:21-log: [Package] scene@1.0.0 enable
-2022-02-21 14:37:21-log: [Package] about@1.0.0 enable
-2022-02-21 14:37:21-log: [Package] server@1.0.0 enable
-2022-02-21 14:37:22-log: [Package] utils@1.0.0 enable
-2022-02-21 14:37:25-log: [Package] preview@1.0.1 enable
-2022-02-21 14:37:25-log: [Package] animator@1.0.0 enable
-2022-02-21 14:37:26-log: [Package] builder@1.3.0 enable
-2022-02-21 14:37:26-log: [Package] node-library@1.0.0 enable
-2022-02-21 14:37:26-log: [Package] shortcuts@1.0.1 enable
-2022-02-21 14:37:26-log: [Package] package-asset@1.0.0 enable
-2022-02-21 14:37:26-log: [Package] reference-image@1.0.0 enable
-2022-02-21 14:37:26-log: [Package] animation-graph@1.0.0 enable
-2022-02-21 14:37:26-log: [Package] channel-upload-tools@1.0.0 enable
-2022-02-21 14:37:26-log: [Package] runtime-dev-tools@1.0.0 enable
-2022-02-21 14:37:27-log: [Package] lightmap@1.0.4 enable
-2022-02-21 14:37:27-log: [Package] alipay-mini-game@1.0.0 enable
-2022-02-21 14:37:27-log: [Package] android@1.0.0 enable
-2022-02-21 14:37:27-log: [Package] baidu-mini-game@1.0.0 enable
-2022-02-21 14:37:27-log: [Package] bytedance-mini-game@1.0.1 enable
-2022-02-21 14:37:27-log: [Package] huawei-agc@1.0.0 enable
-2022-02-21 14:37:27-log: [Package] ios@1.0.0 enable
-2022-02-21 14:37:27-log: [Package] ios-app-clip@1.0.0 enable
-2022-02-21 14:37:27-log: [Package] mac@1.0.0 enable
-2022-02-21 14:37:28-log: [Package] native@1.0.0 enable
-2022-02-21 14:37:28-log: [Package] ohos@1.0.0 enable
-2022-02-21 14:37:28-log: [Package] web-desktop@1.0.0 enable
-2022-02-21 14:37:28-log: [Package] web-mobile@1.0.0 enable
-2022-02-21 14:37:28-log: [Package] wechatgame@1.0.1 enable
-2022-02-21 14:37:28-log: [Package] windows@1.0.0 enable
-2022-02-21 14:37:28-log: [Package] xiaomi-quick-game@1.0.0 enable
-2022-02-21 14:37:28-log: [Package] cocos-play@1.0.0 enable
-2022-02-21 14:37:28-log: [Package] huawei-quick-game@1.0.0 enable
-2022-02-21 14:37:28-log: [Package] link-sure@1.0.0 enable
-2022-02-21 14:37:28-log: [Package] oppo-mini-game@1.0.0 enable
-2022-02-21 14:37:28-log: [Package] qtt@1.0.0 enable
-2022-02-21 14:37:28-log: [Package] vivo-mini-game@1.0.0 enable
-2022-02-21 14:37:29-log: [Package] cocos-service@3.0.2 enable
-2022-02-21 14:37:29-log: [Package] importer@1.0.0 enable
-2022-02-21 14:37:31-log: [Package] extension@3.0.13 enable
-2022-02-21 14:37:32-log: [Im-plugin] Check im-plugin version.
-2022-02-21 14:37:32-log: [Package] im-plugin@3.0.8 enable
-2022-02-21 14:37:34-log: [Im-plugin] No online info of im-plugin.
-2022-02-21 14:37:34-log: [Scene] begin init
-2022-02-21 14:37:34-log: [Scene] require engine end
-2022-02-21 14:37:34-log: [Scene] Serialize end
-2022-02-21 14:37:34-log: [Scene] configureStartup end
-2022-02-21 14:37:35-log: [Scene] Cocos Creator v3.4.0
-2022-02-21 14:37:35-info: [Scene] Forward render pipeline initialized.
-2022-02-21 14:37:36-log: [Scene] openEngine end
-2022-02-21 14:37:36-log: [Scene] configureEngine end
-2022-02-21 16:12:30-error: [Scene] Invalid audio clip
-2022-02-21 16:12:30-warn: [Scene] Missing class: c8e9bxs1nFFQal0VZZInoGS
-2022-02-21 16:12:30-error: [Scene] Error when checking MissingScript 7, SyntaxError: Unexpected token u in JSON at position 0
-2022-02-21 16:12:30-warn: [Scene] Missing class: 41141iF1EBM241YAmD8Eq9A
-2022-02-21 16:12:30-error: [Scene] Error when checking MissingScript 7, SyntaxError: Unexpected token u in JSON at position 0
-2022-02-21 16:12:30-warn: [Scene] Missing class: db978UlVTlNEJqWablBN1sC
-2022-02-21 16:12:30-error: [Scene] Error when checking MissingScript 7, SyntaxError: Unexpected token u in JSON at position 0
-2022-02-21 16:12:30-warn: [Scene] Missing class: 7cad0g3tA5Ltq0k3+lr5PAE
-2022-02-21 16:12:30-error: [Scene] Error when checking MissingScript 7, SyntaxError: Unexpected token u in JSON at position 0
-2022-02-21 16:12:30-error: [Scene] Script "c8e9bxs1nFFQal0VZZInoGS" attached to "GameController" is missing or invalid. Detailed information:
-Script UUID: "c8e9bc6c-d671-4541-a974-5596489e8192"
-Class ID: "c8e9bxs1nFFQal0VZZInoGS"
-
-2022-02-21 16:12:30-error: [Scene] Class "41141iF1EBM241YAmD8Eq9A" used by component "c8e9bxs1nFFQal0VZZInoGS" is missing or invalid. Detailed information:
-Script UUID: "c8e9bc6c-d671-4541-a974-5596489e8192"
-Class ID: "c8e9bxs1nFFQal0VZZInoGS"
-
-2022-02-21 16:12:30-error: [Scene] Class "db978UlVTlNEJqWablBN1sC" used by component "41141iF1EBM241YAmD8Eq9A" is missing or invalid. Detailed information:
-Script UUID: "41141885-d440-4cdb-8d58-0260fc12af40"
-Class ID: "41141iF1EBM241YAmD8Eq9A"
-
-2022-02-21 16:12:30-error: [Scene] Script "7cad0g3tA5Ltq0k3+lr5PAE" attached to "SoundManager" is missing or invalid. Detailed information:
-Script UUID: "7cad0837-b40e-4bb6-ad24-dfe96be4f004"
-Class ID: "7cad0g3tA5Ltq0k3+lr5PAE"
-
-2022-02-21 16:12:30-error: [Scene] Script "c8e9bxs1nFFQal0VZZInoGS" attached to "GameController" is missing or invalid. Detailed information:
-Script UUID: "c8e9bc6c-d671-4541-a974-5596489e8192"
-Class ID: "c8e9bxs1nFFQal0VZZInoGS"
-
-2022-02-21 16:12:30-error: [Scene] Class "41141iF1EBM241YAmD8Eq9A" used by component "c8e9bxs1nFFQal0VZZInoGS" is missing or invalid. Detailed information:
-Script UUID: "c8e9bc6c-d671-4541-a974-5596489e8192"
-Class ID: "c8e9bxs1nFFQal0VZZInoGS"
-
-2022-02-21 16:12:30-error: [Scene] Class "db978UlVTlNEJqWablBN1sC" used by component "41141iF1EBM241YAmD8Eq9A" is missing or invalid. Detailed information:
-Script UUID: "41141885-d440-4cdb-8d58-0260fc12af40"
-Class ID: "41141iF1EBM241YAmD8Eq9A"
-
-2022-02-21 16:12:30-error: [Scene] Script "7cad0g3tA5Ltq0k3+lr5PAE" attached to "SoundManager" is missing or invalid. Detailed information:
-Script UUID: "7cad0837-b40e-4bb6-ad24-dfe96be4f004"
-Class ID: "7cad0g3tA5Ltq0k3+lr5PAE"
-
-2022-02-21 16:12:30-warn: [Scene] Missing class: c8e9bxs1nFFQal0VZZInoGS
-2022-02-21 16:12:30-error: [Scene] Error when checking MissingScript 7, SyntaxError: Unexpected token u in JSON at position 0
-2022-02-21 16:12:30-warn: [Scene] Missing class: 41141iF1EBM241YAmD8Eq9A
-2022-02-21 16:12:30-error: [Scene] Error when checking MissingScript 7, SyntaxError: Unexpected token u in JSON at position 0
-2022-02-21 16:12:30-warn: [Scene] Missing class: db978UlVTlNEJqWablBN1sC
-2022-02-21 16:12:30-error: [Scene] Error when checking MissingScript 7, SyntaxError: Unexpected token u in JSON at position 0
-2022-02-21 16:12:30-warn: [Scene] Missing class: 7cad0g3tA5Ltq0k3+lr5PAE
-2022-02-21 16:12:30-error: [Scene] Error when checking MissingScript 7, SyntaxError: Unexpected token u in JSON at position 0
-2022-02-21 16:12:30-error: [Scene] Script "c8e9bxs1nFFQal0VZZInoGS" attached to "GameController" in scene "scene" is missing or invalid. Detailed information:
-Asset url: "db://assets/scene"
-Script UUID: "c8e9bc6c-d671-4541-a974-5596489e8192"
-Class ID: "c8e9bxs1nFFQal0VZZInoGS"
-
-2022-02-21 16:12:30-error: [Scene] Class "41141iF1EBM241YAmD8Eq9A" used by component "c8e9bxs1nFFQal0VZZInoGS" in scene "scene" is missing or invalid. Detailed information:
-Asset url: "db://assets/scene"
-Script UUID: "c8e9bc6c-d671-4541-a974-5596489e8192"
-Class ID: "c8e9bxs1nFFQal0VZZInoGS"
-
-2022-02-21 16:12:30-error: [Scene] Class "db978UlVTlNEJqWablBN1sC" used by component "41141iF1EBM241YAmD8Eq9A" in scene "scene" is missing or invalid. Detailed information:
-Asset url: "db://assets/scene"
-Script UUID: "41141885-d440-4cdb-8d58-0260fc12af40"
-Class ID: "41141iF1EBM241YAmD8Eq9A"
-
-2022-02-21 16:12:30-error: [Scene] Script "7cad0g3tA5Ltq0k3+lr5PAE" attached to "SoundManager" in scene "scene" is missing or invalid. Detailed information:
-Asset url: "db://assets/scene"
-Script UUID: "7cad0837-b40e-4bb6-ad24-dfe96be4f004"
-Class ID: "7cad0g3tA5Ltq0k3+lr5PAE"
-
-2022-02-21 16:12:30-error: [Scene] Script "c8e9bxs1nFFQal0VZZInoGS" attached to "GameController" in scene "scene" is missing or invalid. Detailed information:
-Asset url: "db://assets/scene"
-Script UUID: "c8e9bc6c-d671-4541-a974-5596489e8192"
-Class ID: "c8e9bxs1nFFQal0VZZInoGS"
-
-2022-02-21 16:12:30-error: [Scene] Class "41141iF1EBM241YAmD8Eq9A" used by component "c8e9bxs1nFFQal0VZZInoGS" in scene "scene" is missing or invalid. Detailed information:
-Asset url: "db://assets/scene"
-Script UUID: "c8e9bc6c-d671-4541-a974-5596489e8192"
-Class ID: "c8e9bxs1nFFQal0VZZInoGS"
-
-2022-02-21 16:12:30-error: [Scene] Class "db978UlVTlNEJqWablBN1sC" used by component "41141iF1EBM241YAmD8Eq9A" in scene "scene" is missing or invalid. Detailed information:
-Asset url: "db://assets/scene"
-Script UUID: "41141885-d440-4cdb-8d58-0260fc12af40"
-Class ID: "41141iF1EBM241YAmD8Eq9A"
-
-2022-02-21 16:12:30-error: [Scene] Script "7cad0g3tA5Ltq0k3+lr5PAE" attached to "SoundManager" in scene "scene" is missing or invalid. Detailed information:
-Asset url: "db://assets/scene"
-Script UUID: "7cad0837-b40e-4bb6-ad24-dfe96be4f004"
-Class ID: "7cad0g3tA5Ltq0k3+lr5PAE"
-
+2022-02-21 16:20:18-log: [Package] menu@1.0.0 enable
+2022-02-21 16:20:18-log: [Package] profile@1.0.0 enable
+2022-02-21 16:20:18-log: [Package] project@1.0.1 enable
+2022-02-21 16:20:18-log: [Package] messages@1.0.0 enable
+2022-02-21 16:20:18-log: [Package] program@1.0.0 enable
+2022-02-21 16:20:18-log: [Package] device@1.0.1 enable
+2022-02-21 16:20:18-log: [Package] ui-kit@1.0.1 enable
+2022-02-21 16:20:18-log: [Package] tester@1.0.0 enable
+2022-02-21 16:20:18-log: [Package] preferences@1.0.0 enable
+2022-02-21 16:20:18-log: Setup mods mgr.: 310.943ms
+2022-02-21 16:20:18-log: [Package] engine@1.0.5 enable
+2022-02-21 16:20:22-log: [Package] programming@1.0.0 enable
+2022-02-21 16:20:23-log: [Package] engine-extends@1.0.0 enable
+2022-02-21 16:20:23-log: [Package] asset-db@1.0.0 enable
+2022-02-21 16:20:23-log: [Package] console@1.0.0 enable
+2022-02-21 16:20:23-log: [Package] scene@1.0.0 enable
+2022-02-21 16:20:23-log: [Package] about@1.0.0 enable
+2022-02-21 16:20:23-log: [Package] server@1.0.0 enable
+2022-02-21 16:20:23-log: [Package] utils@1.0.0 enable
+2022-02-21 16:20:23-log: [Package] inspector@1.0.0 enable
+2022-02-21 16:20:24-log: [Package] hierarchy@1.0.0 enable
+2022-02-21 16:20:26-log: [Package] preview@1.0.1 enable
+2022-02-21 16:20:26-log: [Package] animator@1.0.0 enable
+2022-02-21 16:20:27-log: [Package] builder@1.3.0 enable
+2022-02-21 16:20:27-log: [Package] node-library@1.0.0 enable
+2022-02-21 16:20:27-log: [Package] shortcuts@1.0.1 enable
+2022-02-21 16:20:27-log: [Package] package-asset@1.0.0 enable
+2022-02-21 16:20:27-log: [Package] reference-image@1.0.0 enable
+2022-02-21 16:20:28-log: [Package] animation-graph@1.0.0 enable
+2022-02-21 16:20:28-log: [Package] channel-upload-tools@1.0.0 enable
+2022-02-21 16:20:28-log: [Package] runtime-dev-tools@1.0.0 enable
+2022-02-21 16:20:28-log: [Package] lightmap@1.0.4 enable
+2022-02-21 16:20:28-log: [Package] alipay-mini-game@1.0.0 enable
+2022-02-21 16:20:28-log: [Package] android@1.0.0 enable
+2022-02-21 16:20:28-log: [Package] baidu-mini-game@1.0.0 enable
+2022-02-21 16:20:28-log: [Package] bytedance-mini-game@1.0.1 enable
+2022-02-21 16:20:28-log: [Package] huawei-agc@1.0.0 enable
+2022-02-21 16:20:28-log: [Package] ios@1.0.0 enable
+2022-02-21 16:20:28-log: [Package] ios-app-clip@1.0.0 enable
+2022-02-21 16:20:28-log: [Package] mac@1.0.0 enable
+2022-02-21 16:20:29-log: [Package] native@1.0.0 enable
+2022-02-21 16:20:29-log: [Package] ohos@1.0.0 enable
+2022-02-21 16:20:29-log: [Package] web-desktop@1.0.0 enable
+2022-02-21 16:20:29-log: [Package] web-mobile@1.0.0 enable
+2022-02-21 16:20:29-log: [Package] wechatgame@1.0.1 enable
+2022-02-21 16:20:29-log: [Package] windows@1.0.0 enable
+2022-02-21 16:20:29-log: [Package] xiaomi-quick-game@1.0.0 enable
+2022-02-21 16:20:29-log: [Package] cocos-play@1.0.0 enable
+2022-02-21 16:20:29-log: [Package] huawei-quick-game@1.0.0 enable
+2022-02-21 16:20:29-log: [Package] link-sure@1.0.0 enable
+2022-02-21 16:20:29-log: [Package] oppo-mini-game@1.0.0 enable
+2022-02-21 16:20:29-log: [Package] qtt@1.0.0 enable
+2022-02-21 16:20:29-log: [Package] vivo-mini-game@1.0.0 enable
+2022-02-21 16:20:31-log: [Package] cocos-service@3.0.2 enable
+2022-02-21 16:20:31-log: [Package] importer@1.0.0 enable
+2022-02-21 16:20:32-log: [Package] extension@3.0.13 enable
+2022-02-21 16:20:33-log: [Im-plugin] Check im-plugin version.
+2022-02-21 16:20:33-log: [Package] im-plugin@3.0.8 enable
+2022-02-21 16:20:35-log: [Im-plugin] No online info of im-plugin.
+2022-02-21 16:20:36-log: [Scene] begin init
+2022-02-21 16:20:36-log: [Scene] require engine end
+2022-02-21 16:20:36-log: [Scene] Serialize end
+2022-02-21 16:20:36-log: [Scene] configureStartup end
+2022-02-21 16:20:36-log: [Scene] Cocos Creator v3.4.0
+2022-02-21 16:20:37-info: [Scene] Forward render pipeline initialized.
+2022-02-21 16:20:38-log: [Scene] openEngine end
+2022-02-21 16:20:38-log: [Scene] configureEngine end

@@ -1,6 +1,6 @@
 {
   "cce:/internal/x/cc": {
-    "mTimestamp": 13643.829700000584,
+    "mTimestamp": 10122.340099997818,
     "chunkId": "quick-pack:/cce/internal/x/cc.js",
     "imports": [
       {
@@ -317,7 +317,7 @@
     ]
   },
   "cce:/internal/x/prerequisite-imports": {
-    "mTimestamp": 5726492.364300001,
+    "mTimestamp": 23101.076400000602,
     "chunkId": "quick-pack:/cce/internal/x/prerequisite-imports.js",
     "imports": [
       {
@@ -400,7 +400,7 @@
     ]
   },
   "cce:/internal/code-quality/cr.mjs": {
-    "mTimestamp": 1645429028723,
+    "mTimestamp": 1645435212545,
     "chunkId": "quick-pack:/cce/internal/code-quality/cr.js",
     "imports": [],
     "modLoMetadata": {
@@ -741,6 +741,85 @@
       }
     ]
   },
+  "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts": {
+    "mTimestamp": 1645434627615.259,
+    "chunkId": "assets/Scripts/TreeManager.js",
+    "imports": [
+      {
+        "value": "cce:/internal/code-quality/cr.mjs",
+        "rewritten": "__unresolved_0"
+      },
+      {
+        "value": "cc"
+      },
+      {
+        "value": "cc",
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 126
+          },
+          "end": {
+            "line": 2,
+            "column": 130
+          }
+        }
+      },
+      {
+        "value": "./GameController",
+        "rewritten": "__unresolved_1",
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 31
+          },
+          "end": {
+            "line": 3,
+            "column": 49
+          }
+        }
+      },
+      {
+        "value": "./SoundManager",
+        "rewritten": "__unresolved_2",
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 29
+          },
+          "end": {
+            "line": 5,
+            "column": 45
+          }
+        }
+      }
+    ],
+    "modLoMetadata": {
+      "type": "esm"
+    },
+    "resolvedImports": [
+      {
+        "isExternal": false,
+        "url": "cce:/internal/code-quality/cr.mjs"
+      },
+      {
+        "isExternal": false,
+        "url": "cce:/internal/x/cc"
+      },
+      {
+        "isExternal": false,
+        "url": "cce:/internal/x/cc"
+      },
+      {
+        "isExternal": false,
+        "url": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts"
+      },
+      {
+        "isExternal": false,
+        "url": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts"
+      }
+    ]
+  },
   "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts": {
     "mTimestamp": 1645434627612.2664,
     "chunkId": "assets/Scripts/PlayerMovement.js",
@@ -870,85 +949,6 @@
       {
         "isExternal": false,
         "url": "cce:/internal/x/cc"
-      }
-    ]
-  },
-  "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts": {
-    "mTimestamp": 1645434627615.259,
-    "chunkId": "assets/Scripts/TreeManager.js",
-    "imports": [
-      {
-        "value": "cce:/internal/code-quality/cr.mjs",
-        "rewritten": "__unresolved_0"
-      },
-      {
-        "value": "cc"
-      },
-      {
-        "value": "cc",
-        "loc": {
-          "start": {
-            "line": 2,
-            "column": 126
-          },
-          "end": {
-            "line": 2,
-            "column": 130
-          }
-        }
-      },
-      {
-        "value": "./GameController",
-        "rewritten": "__unresolved_1",
-        "loc": {
-          "start": {
-            "line": 3,
-            "column": 31
-          },
-          "end": {
-            "line": 3,
-            "column": 49
-          }
-        }
-      },
-      {
-        "value": "./SoundManager",
-        "rewritten": "__unresolved_2",
-        "loc": {
-          "start": {
-            "line": 5,
-            "column": 29
-          },
-          "end": {
-            "line": 5,
-            "column": 45
-          }
-        }
-      }
-    ],
-    "modLoMetadata": {
-      "type": "esm"
-    },
-    "resolvedImports": [
-      {
-        "isExternal": false,
-        "url": "cce:/internal/code-quality/cr.mjs"
-      },
-      {
-        "isExternal": false,
-        "url": "cce:/internal/x/cc"
-      },
-      {
-        "isExternal": false,
-        "url": "cce:/internal/x/cc"
-      },
-      {
-        "isExternal": false,
-        "url": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts"
-      },
-      {
-        "isExternal": false,
-        "url": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts"
       }
     ]
   }
