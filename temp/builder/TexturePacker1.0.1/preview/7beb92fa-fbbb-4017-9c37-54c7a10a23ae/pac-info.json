@@ -1,0 +1,111 @@
+{
+  "cacheFiles": {
+    "7beb92fa-fbbb-4017-9c37-54c7a10a23ae": "D:\\Cocos\\Projects\\Karate Chop\\temp\\asset-db\\assets\\7b\\7beb92fa-fbbb-4017-9c37-54c7a10a23ae\\build\\7beb92fa-fbbb-4017-9c37-54c7a10a23ae",
+    "747db857-e645-43da-a1c0-c75e93b779bf@f9941": "D:\\Cocos\\Projects\\Karate Chop\\temp\\asset-db\\assets\\74\\747db857-e645-43da-a1c0-c75e93b779bf@f9941\\build\\7beb92fa-fbbb-4017-9c37-54c7a10a23ae",
+    "0e2ab608-84c2-4ba1-b4ba-0837f9711eae@f9941": "D:\\Cocos\\Projects\\Karate Chop\\temp\\asset-db\\assets\\0e\\0e2ab608-84c2-4ba1-b4ba-0837f9711eae@f9941\\build\\7beb92fa-fbbb-4017-9c37-54c7a10a23ae"
+  },
+  "sharpMd5": "8c10c",
+  "md5": "c9f16",
+  "versionDev": "1.0.2",
+  "result": {
+    "atlases": [
+      {
+        "imageUuid": "16ebaa7df",
+        "textureUuid": "16ebaa7df@6c48a",
+        "compressed": {
+          "imagePathNoExt": "",
+          "suffixs": [
+            ".png"
+          ]
+        },
+        "spriteFrameInfos": [
+          {
+            "name": "White",
+            "uuid": "0e2ab608-84c2-4ba1-b4ba-0837f9711eae@f9941",
+            "imageUuid": "0e2ab608-84c2-4ba1-b4ba-0837f9711eae",
+            "textureUuid": "0e2ab608-84c2-4ba1-b4ba-0837f9711eae@6c48a",
+            "file": "D:\\Cocos\\Projects\\Karate Chop\\assets\\White.png",
+            "libraryPath": "D:\\Cocos\\Projects\\Karate Chop\\temp\\builder\\TexturePacker1.0.1\\build\\trimImages\\spritesheet_js_0e2ab608-84c2-4ba1-b4ba-0837f9711eae@f9941_image_0.png",
+            "trim": {
+              "rotatedWidth": 8,
+              "rotatedHeight": 8,
+              "x": 3,
+              "y": 3,
+              "width": 8,
+              "height": 8
+            },
+            "rawWidth": 8,
+            "rawHeight": 8,
+            "width": 14,
+            "height": 14,
+            "originalPath": "D:\\Cocos\\Projects\\Karate Chop\\library\\0e\\0e2ab608-84c2-4ba1-b4ba-0837f9711eae.png",
+            "rotated": false,
+            "x": 0,
+            "y": 0,
+            "rotatedWidth": 14,
+            "rotatedHeight": 14
+          }
+        ],
+        "width": 14,
+        "height": 14,
+        "name": "lumberjack-0",
+        "imagePath": "D:\\Cocos\\Projects\\Karate Chop\\temp\\builder\\TexturePacker1.0.1\\preview\\7beb92fa-fbbb-4017-9c37-54c7a10a23ae\\16ebaa7df.png"
+      }
+    ],
+    "options": {
+      "name": "lumberjack",
+      "width": 1024,
+      "height": 1024,
+      "destDir": "D:\\Cocos\\Projects\\Karate Chop\\temp\\builder\\TexturePacker1.0.1\\preview\\7beb92fa-fbbb-4017-9c37-54c7a10a23ae",
+      "maxWidth": 1024,
+      "maxHeight": 1024,
+      "padding": 2,
+      "allowRotation": true,
+      "forceSquared": false,
+      "powerOfTwo": false,
+      "algorithm": "MaxRects",
+      "format": "png",
+      "quality": 80,
+      "contourBleed": true,
+      "paddingBleed": true,
+      "filterUnused": true,
+      "removeTextureInBundle": true,
+      "removeImageInBundle": true,
+      "removeSpriteAtlasInBundle": true,
+      "compressSettings": {},
+      "textureSetting": {
+        "wrapModeS": "repeat",
+        "wrapModeT": "repeat",
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0
+      },
+      "bleed": 1
+    },
+    "unpackedImages": [
+      {
+        "name": "lumberjack",
+        "uuid": "747db857-e645-43da-a1c0-c75e93b779bf@f9941",
+        "imageUuid": "747db857-e645-43da-a1c0-c75e93b779bf",
+        "textureUuid": "747db857-e645-43da-a1c0-c75e93b779bf@6c48a",
+        "file": "D:\\Cocos\\Projects\\Karate Chop\\assets\\lumberjack.png",
+        "libraryPath": "D:\\Cocos\\Projects\\Karate Chop\\temp\\builder\\TexturePacker1.0.1\\build\\trimImages\\spritesheet_js_747db857-e645-43da-a1c0-c75e93b779bf@f9941_image_1.png",
+        "trim": {
+          "rotatedWidth": 1040,
+          "rotatedHeight": 300,
+          "x": 1,
+          "y": 1,
+          "width": 1040,
+          "height": 300
+        },
+        "rawWidth": 1041,
+        "rawHeight": 301,
+        "width": 1046,
+        "height": 306,
+        "originalPath": "D:\\Cocos\\Projects\\Karate Chop\\library\\74\\747db857-e645-43da-a1c0-c75e93b779bf.png",
+        "rotated": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "assets/PlayerMovement.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/GameController.js",
+      "__unresolved_2": "assets/SoundManager.js",
+      "__unresolved_3": "assets/TreeManager.js"
+    },
+    "physicalLocation": "fs/0/assets/PlayerMovement.js",
+    "mTimestamp": 1645265194650
+  },
+  "assets/TreeManager.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/GameController.js",
+      "__unresolved_2": "assets/SoundManager.js"
+    },
+    "physicalLocation": "fs/0/assets/TreeManager.js",
+    "mTimestamp": 1645263793254
+  },
+  "assets/GameController.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "__unresolved_1": "assets/PlayerMovement.js"
+    },
+    "physicalLocation": "fs/0/assets/GameController.js",
+    "mTimestamp": 1645265841199
+  },
+  "assets/SoundManager.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js"
+    },
+    "physicalLocation": "fs/0/assets/SoundManager.js",
+    "mTimestamp": 1645265640320
+  },
+  "assets/Scripts.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js"
+    },
+    "physicalLocation": "fs/0/assets/Scripts.js",
+    "mTimestamp": 1645266068751
+  },
+  "assets/Scripts/GameController.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/Scripts/PlayerMovement.js"
+    },
+    "physicalLocation": "fs/0/assets/Scripts/GameController.js",
+    "mTimestamp": 1645431240870
+  },
+  "assets/Scripts/TreeManager.js": {
+    "imports": {
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_2": "assets/Scripts/SoundManager.js",
+      "__unresolved_1": "assets/Scripts/GameController.js"
+    },
+    "physicalLocation": "fs/0/assets/Scripts/TreeManager.js",
+    "mTimestamp": 1645429054324
+  },
+  "assets/Scripts/SoundManager.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js"
+    },
+    "physicalLocation": "fs/0/assets/Scripts/SoundManager.js",
+    "mTimestamp": 1645429054113
+  },
+  "assets/Scripts/PlayerMovement.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js",
+      "__unresolved_2": "assets/Scripts/SoundManager.js",
+      "__unresolved_3": "assets/Scripts/TreeManager.js",
+      "__unresolved_1": "assets/Scripts/GameController.js"
+    },
+    "physicalLocation": "fs/0/assets/Scripts/PlayerMovement.js",
+    "mTimestamp": 1645429054239
+  },
+  "assets/Scripts/BgmPersist.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js"
+    },
+    "physicalLocation": "fs/0/assets/Scripts/BgmPersist.js",
+    "mTimestamp": 1645355698677
+  },
+  "quick-pack:/cce/internal/x/cc.js": {
+    "imports": {
+      "__unresolved_0": {
+        "external": true,
+        "url": "cce:/internal/x/cc-fu/base"
+      },
+      "__unresolved_1": {
+        "external": true,
+        "url": "cce:/internal/x/cc-fu/gfx-webgl"
+      },
+      "__unresolved_2": {
+        "external": true,
+        "url": "cce:/internal/x/cc-fu/gfx-webgl2"
+      },
+      "__unresolved_3": {
+        "external": true,
+        "url": "cce:/internal/x/cc-fu/3d"
+      },
+      "__unresolved_4": {
+        "external": true,
+        "url": "cce:/internal/x/cc-fu/2d"
+      },
+      "__unresolved_5": {
+        "external": true,
+        "url": "cce:/internal/x/cc-fu/ui"
+      },
+      "__unresolved_6": {
+        "external": true,
+        "url": "cce:/internal/x/cc-fu/particle"
+      },
+      "__unresolved_7": {
+        "external": true,
+        "url": "cce:/internal/x/cc-fu/particle-2d"
+      },
+      "__unresolved_8": {
+        "external": true,
+        "url": "cce:/internal/x/cc-fu/physics-framework"
+      },
+      "__unresolved_9": {
+        "external": true,
+        "url": "cce:/internal/x/cc-fu/physics-2d-framework"
+      },
+      "__unresolved_10": {
+        "external": true,
+        "url": "cce:/internal/x/cc-fu/intersection-2d"
+      },
+      "__unresolved_11": {
+        "external": true,
+        "url": "cce:/internal/x/cc-fu/primitive"
+      },
+      "__unresolved_12": {
+        "external": true,
+        "url": "cce:/internal/x/cc-fu/profiler"
+      },
+      "__unresolved_13": {
+        "external": true,
+        "url": "cce:/internal/x/cc-fu/audio"
+      },
+      "__unresolved_14": {
+        "external": true,
+        "url": "cce:/internal/x/cc-fu/video"
+      },
+      "__unresolved_15": {
+        "external": true,
+        "url": "cce:/internal/x/cc-fu/terrain"
+      },
+      "__unresolved_16": {
+        "external": true,
+        "url": "cce:/internal/x/cc-fu/webview"
+      },
+      "__unresolved_17": {
+        "external": true,
+        "url": "cce:/internal/x/cc-fu/tween"
+      },
+      "__unresolved_18": {
+        "external": true,
+        "url": "cce:/internal/x/cc-fu/tiled-map"
+      },
+      "__unresolved_19": {
+        "external": true,
+        "url": "cce:/internal/x/cc-fu/spine"
+      },
+      "__unresolved_20": {
+        "external": true,
+        "url": "cce:/internal/x/cc-fu/dragon-bones"
+      }
+    },
+    "physicalLocation": "cce/internal/x/cc.js",
+    "mTimestamp": 1645429053407,
+    "isEntry": true,
+    "exposeAs": "cce:/internal/x/cc"
+  },
+  "quick-pack:/cce/internal/code-quality/cr.js": {
+    "imports": {},
+    "physicalLocation": "cce/internal/code-quality/cr.js",
+    "mTimestamp": 1645429054352
+  },
+  "quick-pack:/cce/internal/x/prerequisite-imports.js": {
+    "imports": {
+      "__unresolved_1": "assets/Scripts/PlayerMovement.js",
+      "__unresolved_2": "assets/Scripts/SoundManager.js",
+      "__unresolved_3": "assets/Scripts/TreeManager.js",
+      "__unresolved_0": "assets/Scripts/GameController.js"
+    },
+    "physicalLocation": "cce/internal/x/prerequisite-imports.js",
+    "mTimestamp": 1645431240678,
+    "isEntry": true,
+    "exposeAs": "cce:/internal/x/prerequisite-imports"
+  }
+}

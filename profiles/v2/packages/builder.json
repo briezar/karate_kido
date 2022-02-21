@@ -1,0 +1,59 @@
+{
+  "log": {
+    "level": 4
+  },
+  "BuildTaskManager": {
+    "taskMap": {
+      "1645356365997": {
+        "id": "1645356365997",
+        "progress": 1,
+        "state": "success",
+        "message": "2-20-2022 23:37 Build success in 8254 ms!",
+        "options": {
+          "name": "viet_treechopper",
+          "platform": "web-mobile",
+          "buildPath": "project://build",
+          "debug": false,
+          "md5Cache": false,
+          "sourceMaps": false,
+          "replaceSplashScreen": false,
+          "mainBundleCompressionType": "merge_dep",
+          "mainBundleIsRemote": false,
+          "mergeStartScene": false,
+          "experimentalEraseModules": false,
+          "compressTexture": true,
+          "packAutoAtlas": true,
+          "startScene": "30d67e68-52e9-4fb6-b934-f12d44e13d78",
+          "scenes": [
+            {
+              "url": "db://assets/scene.scene",
+              "uuid": "30d67e68-52e9-4fb6-b934-f12d44e13d78",
+              "inBundle": false
+            }
+          ],
+          "outputName": "viet_treechopper",
+          "packages": {
+            "web-mobile": {
+              "orientation": "auto",
+              "polyfills": {
+                "asyncFunctions": true
+              }
+            },
+            "cocos-service": {
+              "configID": "b8dc91",
+              "services": []
+            }
+          }
+        },
+        "time": "2-20-2022 23:37",
+        "dirty": false
+      }
+    }
+  },
+  "common": {
+    "outputName": "viet_treechopper",
+    "mainBundleCompressionType": "merge_dep",
+    "platform": "web-mobile",
+    "name": "viet_treechopper"
+  }
+}

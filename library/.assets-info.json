@@ -1,0 +1,402 @@
+{
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\White.png.meta": {
+    "time": 1644506645433.7375
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\White.png": {
+    "time": 1634206902000,
+    "uuid": "0e2ab608-84c2-4ba1-b4ba-0837f9711eae",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Tree.prefab.meta": {
+    "time": 1644508144485.043
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Tree.prefab": {
+    "time": 1644955015914.6506,
+    "uuid": "4d1a7c13-5e61-4933-adf7-52d38880c8ac",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\TreeWithStick.prefab.meta": {
+    "time": 1644508549820.993
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\TreeWithStick.prefab": {
+    "time": 1644957143477.3499,
+    "uuid": "d9f7f6fa-a80d-40dc-a07c-81be24fda316",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\scene.scene.meta": {
+    "time": 1644514031341.9414
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\scene.scene": {
+    "time": 1645374227859.5474,
+    "uuid": "30d67e68-52e9-4fb6-b934-f12d44e13d78",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\resources.meta": {
+    "time": 1644922619214.5845
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\resources": {
+    "time": 1645374080582.634,
+    "uuid": "5e4672b2-e4a2-4e71-890b-36b82c15d126",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\branch.png.meta": {
+    "time": 1644954653318.0964
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\branch.png": {
+    "time": 1644954589931.4355,
+    "uuid": "49cbb50e-74ee-4658-8cb2-53a3d498956c",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\texture tree.jpg.meta": {
+    "time": 1644954961479.651
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\texture tree.jpg": {
+    "time": 1644954946944.7,
+    "uuid": "08e55cd1-e2cb-4696-bd08-a4fefb243bbb",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Circle.png.meta": {
+    "time": 1644955397493.6233
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Circle.png": {
+    "time": 1626087008000,
+    "uuid": "0ddcdc99-f659-4a77-a9b4-46f273063316",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Sound.meta": {
+    "time": 1645263871525.2332
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Sound": {
+    "time": 1645265670077.519,
+    "uuid": "b6d19342-e008-4ca7-aa1b-a7895dbf9f3c",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Sound\\Impact Axe Chop 0.mp3.meta": {
+    "time": 1645263913483.9834
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Sound\\Impact Axe Chop 2.mp3.meta": {
+    "time": 1645263913515.8994
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Sound\\Impact Axe Chop 1.mp3.meta": {
+    "time": 1645263913566.8252
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Sound\\Impact Axe Chop 0.mp3": {
+    "time": 1645263088439.2708,
+    "uuid": "155d74d2-5ab1-4f99-b0a3-4932dada39a8",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Sound\\Impact Axe Chop 2.mp3": {
+    "time": 1645263098382.2915,
+    "uuid": "4a9c3b5b-bc04-4b9d-ba93-dac790edcaa8",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Sound\\Impact Axe Chop 1.mp3": {
+    "time": 1645263075230.0933,
+    "uuid": "c7840b6c-0b59-44c6-a094-02be2c957d0f",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Sound\\bonk.mp3.meta": {
+    "time": 1645264087374.6892
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Sound\\bonk.mp3": {
+    "time": 1645264075870.9575,
+    "uuid": "374600a4-5b7e-487d-ae8e-48ff103b0e05",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Sound\\PunchSFX.mp3.meta": {
+    "time": 1645265220427.841
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Sound\\PunchSFX.mp3": {
+    "time": 1645264557841.5752,
+    "uuid": "2697b9e9-ff77-4376-84ab-d4281f38e6d6",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Sound\\34 Purrple Cat - Woodpecker.mp3.meta": {
+    "time": 1645265670167.7585
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Sound\\34 Purrple Cat - Woodpecker.mp3": {
+    "time": 1645265621724.9956,
+    "uuid": "b837d892-8d71-45e4-93d3-5b73afcb6826",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Scripts.meta": {
+    "time": 1645266081198.4316
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Scripts": {
+    "time": 1645373778284.8987,
+    "uuid": "4f768ce0-d872-4355-abaf-ecff14ee2e91",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Scripts\\GameController.ts.meta": {
+    "time": 1644828680312.567
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Scripts\\GameController.ts": {
+    "time": 1645369604366.81,
+    "uuid": "c8e9bc6c-d671-4541-a974-5596489e8192",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Scripts\\PlayerMovement.ts.meta": {
+    "time": 1644507428701.8335
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Scripts\\PlayerMovement.ts": {
+    "time": 1645373778275.891,
+    "uuid": "41141885-d440-4cdb-8d58-0260fc12af40",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Scripts\\TreeManager.ts.meta": {
+    "time": 1644509646578.5686
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Scripts\\TreeManager.ts": {
+    "time": 1645368000480.2366,
+    "uuid": "db978525-5539-4d10-9a96-69b941375b02",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Scripts\\SoundManager.ts.meta": {
+    "time": 1645263317650.105
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\Scripts\\SoundManager.ts": {
+    "time": 1645266434738.786,
+    "uuid": "7cad0837-b40e-4bb6-ad24-dfe96be4f004",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\resources\\FloatingNumber.prefab.meta": {
+    "time": 1645268499960.0156
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\resources\\FloatingNumber.prefab": {
+    "time": 1645367188061.8293,
+    "uuid": "a8cc509c-f861-4936-b37c-95cfe0d93742",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\resources\\lumberjackSilver_0.png.meta": {
+    "time": 1645371840005.4536
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\resources\\lumberjackSilver_1.png.meta": {
+    "time": 1645371854622.9683
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\resources\\lumberjackSilver_0.png": {
+    "time": 1644922354458.5994,
+    "uuid": "0c2c5c6c-b9b0-485d-8985-f5ed826045b0",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\resources\\lumberjackSilver_1.png": {
+    "time": 1644922375646.7473,
+    "uuid": "bb59bbb2-2b74-4d9f-a391-1f4dfa15354a",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\resources\\lumberjackGold_0.png.meta": {
+    "time": 1645371875803.3518
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\resources\\lumberjackGold_1.png.meta": {
+    "time": 1645371881089.3967
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\resources\\lumberjackGold_0.png": {
+    "time": 1645371768925.8289,
+    "uuid": "d159fae4-5ece-4286-9c34-1a0872c636a8",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\Karate Chop\\assets\\resources\\lumberjackGold_1.png": {
+    "time": 1645371820713.1665,
+    "uuid": "16e3957d-7efc-4528-8f58-5dc732b71914",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\branch.png": {
+    "time": 1644954589931.4355,
+    "uuid": "49cbb50e-74ee-4658-8cb2-53a3d498956c",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Circle.png": {
+    "time": 1626087008000,
+    "uuid": "0ddcdc99-f659-4a77-a9b4-46f273063316",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources": {
+    "time": 1645374080582.634,
+    "uuid": "5e4672b2-e4a2-4e71-890b-36b82c15d126",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\scene.scene": {
+    "time": 1645430156658.7485,
+    "uuid": "30d67e68-52e9-4fb6-b934-f12d44e13d78",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts": {
+    "time": 1645431208150.3252,
+    "uuid": "4f768ce0-d872-4355-abaf-ecff14ee2e91",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Sound": {
+    "time": 1645265670077.519,
+    "uuid": "b6d19342-e008-4ca7-aa1b-a7895dbf9f3c",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\texture tree.jpg": {
+    "time": 1644954946944.7,
+    "uuid": "08e55cd1-e2cb-4696-bd08-a4fefb243bbb",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Tree.prefab": {
+    "time": 1644955015914.6506,
+    "uuid": "4d1a7c13-5e61-4933-adf7-52d38880c8ac",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\TreeWithStick.prefab": {
+    "time": 1644957143477.3499,
+    "uuid": "d9f7f6fa-a80d-40dc-a07c-81be24fda316",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\White.png": {
+    "time": 1634206902000,
+    "uuid": "0e2ab608-84c2-4ba1-b4ba-0837f9711eae",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\FloatingNumber.prefab": {
+    "time": 1645367188061.8293,
+    "uuid": "a8cc509c-f861-4936-b37c-95cfe0d93742",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\lumberjackGold_0.png": {
+    "time": 1645371768925.8289,
+    "uuid": "d159fae4-5ece-4286-9c34-1a0872c636a8",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\lumberjackGold_1.png": {
+    "time": 1645371820713.1665,
+    "uuid": "16e3957d-7efc-4528-8f58-5dc732b71914",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\lumberjackSilver_0.png": {
+    "time": 1644922354458.5994,
+    "uuid": "0c2c5c6c-b9b0-485d-8985-f5ed826045b0",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\lumberjackSilver_1.png": {
+    "time": 1644922375646.7473,
+    "uuid": "bb59bbb2-2b74-4d9f-a391-1f4dfa15354a",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts\\GameController.ts": {
+    "time": 1645431208108.438,
+    "uuid": "c8e9bc6c-d671-4541-a974-5596489e8192",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts\\PlayerMovement.ts": {
+    "time": 1645419451365.4631,
+    "uuid": "41141885-d440-4cdb-8d58-0260fc12af40",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts\\SoundManager.ts": {
+    "time": 1645374981890.85,
+    "uuid": "7cad0837-b40e-4bb6-ad24-dfe96be4f004",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts\\TreeManager.ts": {
+    "time": 1645420294429.2073,
+    "uuid": "db978525-5539-4d10-9a96-69b941375b02",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Sound\\34 Purrple Cat - Woodpecker.mp3": {
+    "time": 1645265621724.9956,
+    "uuid": "b837d892-8d71-45e4-93d3-5b73afcb6826",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Sound\\bonk.mp3": {
+    "time": 1645264075870.9575,
+    "uuid": "374600a4-5b7e-487d-ae8e-48ff103b0e05",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Sound\\Impact Axe Chop 0.mp3": {
+    "time": 1645263088439.2708,
+    "uuid": "155d74d2-5ab1-4f99-b0a3-4932dada39a8",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Sound\\Impact Axe Chop 1.mp3": {
+    "time": 1645263075230.0933,
+    "uuid": "c7840b6c-0b59-44c6-a094-02be2c957d0f",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Sound\\Impact Axe Chop 2.mp3": {
+    "time": 1645263098382.2915,
+    "uuid": "4a9c3b5b-bc04-4b9d-ba93-dac790edcaa8",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Sound\\PunchSFX.mp3": {
+    "time": 1645264557841.5752,
+    "uuid": "2697b9e9-ff77-4376-84ab-d4281f38e6d6",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources.meta": {
+    "time": 1644922619214.5845
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts.meta": {
+    "time": 1645266081198.4316
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Sound.meta": {
+    "time": 1645263871525.2332
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\scene.scene.meta": {
+    "time": 1644514031341.9414
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Tree.prefab.meta": {
+    "time": 1644508144485.043
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\TreeWithStick.prefab.meta": {
+    "time": 1644508549820.993
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Circle.png.meta": {
+    "time": 1644955397493.6233
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\branch.png.meta": {
+    "time": 1644954653318.0964
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\FloatingNumber.prefab.meta": {
+    "time": 1645268499960.0156
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\lumberjackGold_0.png.meta": {
+    "time": 1645371875803.3518
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\lumberjackGold_1.png.meta": {
+    "time": 1645371881089.3967
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts\\GameController.ts.meta": {
+    "time": 1644828680312.567
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\texture tree.jpg.meta": {
+    "time": 1644954961479.651
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts\\PlayerMovement.ts.meta": {
+    "time": 1644507428701.8335
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts\\SoundManager.ts.meta": {
+    "time": 1645263317650.105
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\lumberjackSilver_0.png.meta": {
+    "time": 1645371840005.4536
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts\\TreeManager.ts.meta": {
+    "time": 1644509646578.5686
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\White.png.meta": {
+    "time": 1644506645433.7375
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\lumberjackSilver_1.png.meta": {
+    "time": 1645371854622.9683
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Sound\\Impact Axe Chop 1.mp3.meta": {
+    "time": 1645263913566.8252
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Sound\\bonk.mp3.meta": {
+    "time": 1645264087374.6892
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Sound\\Impact Axe Chop 0.mp3.meta": {
+    "time": 1645263913483.9834
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Sound\\Impact Axe Chop 2.mp3.meta": {
+    "time": 1645263913515.8994
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Sound\\34 Purrple Cat - Woodpecker.mp3.meta": {
+    "time": 1645265670167.7585
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Sound\\PunchSFX.mp3.meta": {
+    "time": 1645265220427.841
+  }
+}

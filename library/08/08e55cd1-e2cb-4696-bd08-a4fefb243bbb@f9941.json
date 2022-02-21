@@ -1,0 +1,30 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "texture tree",
+    "atlas": "",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "width": 191,
+      "height": 188
+    },
+    "offset": {
+      "x": 0,
+      "y": 0
+    },
+    "originalSize": {
+      "width": 191,
+      "height": 188
+    },
+    "rotated": false,
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "texture": "08e55cd1-e2cb-4696-bd08-a4fefb243bbb@6c48a",
+    "packable": true
+  }
+}
