@@ -63,3 +63,92 @@
 2022-02-21 14:37:35-info: [Scene] Forward render pipeline initialized.
 2022-02-21 14:37:36-log: [Scene] openEngine end
 2022-02-21 14:37:36-log: [Scene] configureEngine end
+2022-02-21 16:12:30-error: [Scene] Invalid audio clip
+2022-02-21 16:12:30-warn: [Scene] Missing class: c8e9bxs1nFFQal0VZZInoGS
+2022-02-21 16:12:30-error: [Scene] Error when checking MissingScript 7, SyntaxError: Unexpected token u in JSON at position 0
+2022-02-21 16:12:30-warn: [Scene] Missing class: 41141iF1EBM241YAmD8Eq9A
+2022-02-21 16:12:30-error: [Scene] Error when checking MissingScript 7, SyntaxError: Unexpected token u in JSON at position 0
+2022-02-21 16:12:30-warn: [Scene] Missing class: db978UlVTlNEJqWablBN1sC
+2022-02-21 16:12:30-error: [Scene] Error when checking MissingScript 7, SyntaxError: Unexpected token u in JSON at position 0
+2022-02-21 16:12:30-warn: [Scene] Missing class: 7cad0g3tA5Ltq0k3+lr5PAE
+2022-02-21 16:12:30-error: [Scene] Error when checking MissingScript 7, SyntaxError: Unexpected token u in JSON at position 0
+2022-02-21 16:12:30-error: [Scene] Script "c8e9bxs1nFFQal0VZZInoGS" attached to "GameController" is missing or invalid. Detailed information:
+Script UUID: "c8e9bc6c-d671-4541-a974-5596489e8192"
+Class ID: "c8e9bxs1nFFQal0VZZInoGS"
+
+2022-02-21 16:12:30-error: [Scene] Class "41141iF1EBM241YAmD8Eq9A" used by component "c8e9bxs1nFFQal0VZZInoGS" is missing or invalid. Detailed information:
+Script UUID: "c8e9bc6c-d671-4541-a974-5596489e8192"
+Class ID: "c8e9bxs1nFFQal0VZZInoGS"
+
+2022-02-21 16:12:30-error: [Scene] Class "db978UlVTlNEJqWablBN1sC" used by component "41141iF1EBM241YAmD8Eq9A" is missing or invalid. Detailed information:
+Script UUID: "41141885-d440-4cdb-8d58-0260fc12af40"
+Class ID: "41141iF1EBM241YAmD8Eq9A"
+
+2022-02-21 16:12:30-error: [Scene] Script "7cad0g3tA5Ltq0k3+lr5PAE" attached to "SoundManager" is missing or invalid. Detailed information:
+Script UUID: "7cad0837-b40e-4bb6-ad24-dfe96be4f004"
+Class ID: "7cad0g3tA5Ltq0k3+lr5PAE"
+
+2022-02-21 16:12:30-error: [Scene] Script "c8e9bxs1nFFQal0VZZInoGS" attached to "GameController" is missing or invalid. Detailed information:
+Script UUID: "c8e9bc6c-d671-4541-a974-5596489e8192"
+Class ID: "c8e9bxs1nFFQal0VZZInoGS"
+
+2022-02-21 16:12:30-error: [Scene] Class "41141iF1EBM241YAmD8Eq9A" used by component "c8e9bxs1nFFQal0VZZInoGS" is missing or invalid. Detailed information:
+Script UUID: "c8e9bc6c-d671-4541-a974-5596489e8192"
+Class ID: "c8e9bxs1nFFQal0VZZInoGS"
+
+2022-02-21 16:12:30-error: [Scene] Class "db978UlVTlNEJqWablBN1sC" used by component "41141iF1EBM241YAmD8Eq9A" is missing or invalid. Detailed information:
+Script UUID: "41141885-d440-4cdb-8d58-0260fc12af40"
+Class ID: "41141iF1EBM241YAmD8Eq9A"
+
+2022-02-21 16:12:30-error: [Scene] Script "7cad0g3tA5Ltq0k3+lr5PAE" attached to "SoundManager" is missing or invalid. Detailed information:
+Script UUID: "7cad0837-b40e-4bb6-ad24-dfe96be4f004"
+Class ID: "7cad0g3tA5Ltq0k3+lr5PAE"
+
+2022-02-21 16:12:30-warn: [Scene] Missing class: c8e9bxs1nFFQal0VZZInoGS
+2022-02-21 16:12:30-error: [Scene] Error when checking MissingScript 7, SyntaxError: Unexpected token u in JSON at position 0
+2022-02-21 16:12:30-warn: [Scene] Missing class: 41141iF1EBM241YAmD8Eq9A
+2022-02-21 16:12:30-error: [Scene] Error when checking MissingScript 7, SyntaxError: Unexpected token u in JSON at position 0
+2022-02-21 16:12:30-warn: [Scene] Missing class: db978UlVTlNEJqWablBN1sC
+2022-02-21 16:12:30-error: [Scene] Error when checking MissingScript 7, SyntaxError: Unexpected token u in JSON at position 0
+2022-02-21 16:12:30-warn: [Scene] Missing class: 7cad0g3tA5Ltq0k3+lr5PAE
+2022-02-21 16:12:30-error: [Scene] Error when checking MissingScript 7, SyntaxError: Unexpected token u in JSON at position 0
+2022-02-21 16:12:30-error: [Scene] Script "c8e9bxs1nFFQal0VZZInoGS" attached to "GameController" in scene "scene" is missing or invalid. Detailed information:
+Asset url: "db://assets/scene"
+Script UUID: "c8e9bc6c-d671-4541-a974-5596489e8192"
+Class ID: "c8e9bxs1nFFQal0VZZInoGS"
+
+2022-02-21 16:12:30-error: [Scene] Class "41141iF1EBM241YAmD8Eq9A" used by component "c8e9bxs1nFFQal0VZZInoGS" in scene "scene" is missing or invalid. Detailed information:
+Asset url: "db://assets/scene"
+Script UUID: "c8e9bc6c-d671-4541-a974-5596489e8192"
+Class ID: "c8e9bxs1nFFQal0VZZInoGS"
+
+2022-02-21 16:12:30-error: [Scene] Class "db978UlVTlNEJqWablBN1sC" used by component "41141iF1EBM241YAmD8Eq9A" in scene "scene" is missing or invalid. Detailed information:
+Asset url: "db://assets/scene"
+Script UUID: "41141885-d440-4cdb-8d58-0260fc12af40"
+Class ID: "41141iF1EBM241YAmD8Eq9A"
+
+2022-02-21 16:12:30-error: [Scene] Script "7cad0g3tA5Ltq0k3+lr5PAE" attached to "SoundManager" in scene "scene" is missing or invalid. Detailed information:
+Asset url: "db://assets/scene"
+Script UUID: "7cad0837-b40e-4bb6-ad24-dfe96be4f004"
+Class ID: "7cad0g3tA5Ltq0k3+lr5PAE"
+
+2022-02-21 16:12:30-error: [Scene] Script "c8e9bxs1nFFQal0VZZInoGS" attached to "GameController" in scene "scene" is missing or invalid. Detailed information:
+Asset url: "db://assets/scene"
+Script UUID: "c8e9bc6c-d671-4541-a974-5596489e8192"
+Class ID: "c8e9bxs1nFFQal0VZZInoGS"
+
+2022-02-21 16:12:30-error: [Scene] Class "41141iF1EBM241YAmD8Eq9A" used by component "c8e9bxs1nFFQal0VZZInoGS" in scene "scene" is missing or invalid. Detailed information:
+Asset url: "db://assets/scene"
+Script UUID: "c8e9bc6c-d671-4541-a974-5596489e8192"
+Class ID: "c8e9bxs1nFFQal0VZZInoGS"
+
+2022-02-21 16:12:30-error: [Scene] Class "db978UlVTlNEJqWablBN1sC" used by component "41141iF1EBM241YAmD8Eq9A" in scene "scene" is missing or invalid. Detailed information:
+Asset url: "db://assets/scene"
+Script UUID: "41141885-d440-4cdb-8d58-0260fc12af40"
+Class ID: "41141iF1EBM241YAmD8Eq9A"
+
+2022-02-21 16:12:30-error: [Scene] Script "7cad0g3tA5Ltq0k3+lr5PAE" attached to "SoundManager" in scene "scene" is missing or invalid. Detailed information:
+Asset url: "db://assets/scene"
+Script UUID: "7cad0837-b40e-4bb6-ad24-dfe96be4f004"
+Class ID: "7cad0g3tA5Ltq0k3+lr5PAE"
+

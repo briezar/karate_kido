@@ -210,3 +210,117 @@ debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/Game
 debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts as cce:/internal/x/cc.
 debug: Resolve ./PlayerMovement from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts.
 debug: Target(preview) ends with cost 339.8635000027716ms.
+debug: Dispatch build request for time accumulated 4 asset changes.
+debug: Build iteration starts.
+Number of accumulated asset changes: 4
+Feature changed: false
+debug: Target(editor) build started.
+debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:36:54 GMT+0800 (Indochina Time), Current mtime: Thu Jan 01 1970 09:35:24 GMT+0800 (Indochina Time)
+debug: Inspect cce:/internal/x/prerequisite-imports
+debug: Target(editor) ends with cost 53.00219999998808ms.
+debug: Target(preview) build started.
+debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 08:36:54 GMT+0800 (Indochina Time), Current mtime: Thu Jan 01 1970 09:35:24 GMT+0800 (Indochina Time)
+debug: Inspect cce:/internal/x/prerequisite-imports
+debug: Target(preview) ends with cost 54.60419999808073ms.
+debug: Dispatch build request for time accumulated 1 asset changes.
+debug: Build iteration starts.
+Number of accumulated asset changes: 1
+Feature changed: false
+debug: Target(editor) build started.
+debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 09:35:24 GMT+0800 (Indochina Time), Current mtime: Thu Jan 01 1970 09:35:25 GMT+0800 (Indochina Time)
+debug: Inspect cce:/internal/x/prerequisite-imports
+debug: Resolve file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts from cce:/internal/x/prerequisite-imports as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts.
+debug: Inspect file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts
+debug: Dispatch build request for time accumulated 3 asset changes.
+debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts as cce:/internal/code-quality/cr.mjs.
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts as cce:/internal/x/cc.
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts as cce:/internal/x/cc.
+debug: Resolve ./PlayerMovement from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts.
+debug: Inspect file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts
+debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as cce:/internal/code-quality/cr.mjs.
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as cce:/internal/x/cc.
+debug: Resolve ./GameController from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts.
+debug: Resolve ./SoundManager from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts.
+debug: Resolve ./TreeManager from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts.
+debug: Inspect file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts
+debug: Inspect file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts as cce:/internal/x/cc.
+debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts as cce:/internal/code-quality/cr.mjs.
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts as cce:/internal/x/cc.
+debug: Resolve ./GameController from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts.
+debug: Resolve ./SoundManager from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts.
+debug: Target(editor) ends with cost 450.3442000001669ms.
+debug: Target(preview) build started.
+debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 09:35:24 GMT+0800 (Indochina Time), Current mtime: Thu Jan 01 1970 09:35:25 GMT+0800 (Indochina Time)
+debug: Inspect cce:/internal/x/prerequisite-imports
+debug: Resolve file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts from cce:/internal/x/prerequisite-imports as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts.
+debug: Inspect file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts
+debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts as cce:/internal/code-quality/cr.mjs.
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts as cce:/internal/x/cc.
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts as cce:/internal/x/cc.
+debug: Resolve ./PlayerMovement from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts.
+debug: Inspect file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts
+debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as cce:/internal/code-quality/cr.mjs.
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as cce:/internal/x/cc.
+debug: Resolve ./GameController from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts.
+debug: Resolve ./SoundManager from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts.
+debug: Resolve ./TreeManager from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts.
+debug: Inspect file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts
+debug: Inspect file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts as cce:/internal/x/cc.
+debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts as cce:/internal/code-quality/cr.mjs.
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts as cce:/internal/x/cc.
+debug: Resolve ./GameController from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts.
+debug: Resolve ./SoundManager from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts.
+debug: Target(preview) ends with cost 582.1862000003457ms.
+debug: Build iteration starts.
+Number of accumulated asset changes: 3
+Feature changed: false
+debug: Target(editor) build started.
+debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 09:35:25 GMT+0800 (Indochina Time), Current mtime: Thu Jan 01 1970 09:35:26 GMT+0800 (Indochina Time)
+debug: Inspect cce:/internal/x/prerequisite-imports
+debug: Resolve file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts from cce:/internal/x/prerequisite-imports as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts.
+debug: Resolve file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts from cce:/internal/x/prerequisite-imports as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts.
+debug: Resolve file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts.
+debug: Resolve file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts.
+debug: Inspect file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts
+debug: Inspect file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts
+debug: Inspect file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts
+debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as cce:/internal/code-quality/cr.mjs.
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as cce:/internal/x/cc.
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as cce:/internal/x/cc.
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts as cce:/internal/x/cc.
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts as cce:/internal/x/cc.
+debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts as cce:/internal/code-quality/cr.mjs.
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts as cce:/internal/x/cc.
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts as cce:/internal/x/cc.
+debug: Resolve ./GameController from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts.
+debug: Resolve ./SoundManager from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts.
+debug: Resolve ./TreeManager from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts.
+debug: Resolve ./GameController from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts.
+debug: Resolve ./SoundManager from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts.
+debug: Target(editor) ends with cost 222.65480000153184ms.
+debug: Target(preview) build started.
+debug: Detected change: cce:/internal/x/prerequisite-imports. Last mtime: Thu Jan 01 1970 09:35:25 GMT+0800 (Indochina Time), Current mtime: Thu Jan 01 1970 09:35:26 GMT+0800 (Indochina Time)
+debug: Inspect cce:/internal/x/prerequisite-imports
+debug: Resolve file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts from cce:/internal/x/prerequisite-imports as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts.
+debug: Resolve file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts from cce:/internal/x/prerequisite-imports as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts.
+debug: Resolve file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts.
+debug: Resolve file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts from cce:/internal/x/prerequisite-imports as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts.
+debug: Inspect file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts
+debug: Inspect file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts
+debug: Inspect file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts
+debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as cce:/internal/code-quality/cr.mjs.
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as cce:/internal/x/cc.
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as cce:/internal/x/cc.
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts as cce:/internal/x/cc.
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts as cce:/internal/x/cc.
+debug: Resolve cce:/internal/code-quality/cr.mjs from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts as cce:/internal/code-quality/cr.mjs.
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts as cce:/internal/x/cc.
+debug: Resolve cc from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts as cce:/internal/x/cc.
+debug: Resolve ./GameController from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts.
+debug: Resolve ./SoundManager from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts.
+debug: Resolve ./TreeManager from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts.
+debug: Resolve ./GameController from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts.
+debug: Resolve ./SoundManager from file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts as file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts.
+debug: Target(preview) ends with cost 217.52400000020862ms.
