@@ -1,5 +1,6 @@
 
-import { _decorator, Component, Node, Vec2, director, find, ProgressBar, game, Label, sys, Prefab, resources, instantiate, RigidBody2D, randomRange, RigidBody, Color } from 'cc';
+import { _decorator, Component, Node, Vec2, director, find, ProgressBar, game, Label, sys, Prefab, resources, instantiate, RigidBody2D, randomRange, RigidBody, Color, EPSILON, EventTouch } from 'cc';
+import { FloatingNumber } from './FloatingNumber';
 import { PlayerMovement } from './PlayerMovement';
 const { ccclass, property } = _decorator;
 
@@ -20,47 +21,59 @@ export class GameController extends Component {
 
     public static Instance: GameController = null;
 
-    @property({ type: PlayerMovement })
-    public playerMovement: PlayerMovement;
+    @property({ type: PlayerMovement }) public playerMovement: PlayerMovement;
+    @property({ type: Prefab }) public gameplay: Prefab;
 
     timerBar: ProgressBar;
+    multiplierBar: ProgressBar;
+    multiplierLabel: Label;
+
+    multiplier: number = 1;
+    multiplierTimeScale: number = 1;
+    multiplierProgress: number = 0;
+
     timer: number;
+    timerTimeScale: number = 1;
     maxTime: number = 6;
+    difficultyScale: number = 1;
 
     scoreLabel: Label;
-    floatingNumber: Prefab;
 
     touchInput: Vec2;
     isLost: boolean = false;
     isPaused: boolean = false;
     score: number = 0;
 
-    pool_floatingScore: Node[] = [];
+    pool_floatingScore: FloatingNumber[] = [];
+    confirmResetBestScoreNode: Node;
 
     onLoad() {
 
         GameController.Instance = this;
 
         resources.load("FloatingNumber", Prefab, (err, prefab) => {
-            this.floatingNumber = prefab;
             for (var i = 0; i < 20; i++) {
-                this.pool_floatingScore.push(instantiate(this.floatingNumber));
-                this.pool_floatingScore[i].active = false;
-                this.pool_floatingScore[i].setParent(this.node.parent);
+                this.pool_floatingScore.push(instantiate(prefab).getComponent(FloatingNumber));
+                let node = this.pool_floatingScore[i].node;
+                node.active = false;
+                node.setParent(this.node.parent);
             }
         });
 
-        this.scoreLabel = find("Canvas/Score").getComponent(Label);
+        this.scoreLabel = this.node.parent.getChildByName("Score").getComponent(Label);
         if (sys.localStorage.getItem('bestScore') == null) {
             sys.localStorage.setItem('bestScore', '0');
         }
         window.sessionStorage.setItem('score', '0');
         this.scoreLabel.string = "Score: " + this.score + "\nBest Score: " + parseInt(sys.localStorage.getItem('bestScore'));
 
-        this.timerBar = find("Canvas/Timer").getComponent(ProgressBar);
+        this.confirmResetBestScoreNode = this.node.parent.getChildByName("ConfimResetBestScore");
+        this.timerBar = this.node.parent.getChildByName("Timer").getComponent(ProgressBar);
+        this.multiplierBar = this.node.parent.getChildByName("Multiplier").getComponent(ProgressBar);
+        this.multiplierLabel = this.multiplierBar.getComponentInChildren(Label);
         this.timer = this.maxTime;
 
-        this.node.on(Node.EventType.TOUCH_START, (event: any) => {
+        this.node.on(Node.EventType.TOUCH_START, (event: EventTouch) => {
             this.touchInput = event.getUILocation();
 
             if (this.isLost || this.isPaused) return;
@@ -73,20 +86,39 @@ export class GameController extends Component {
             }
         }, this);
 
-        if (window.sessionStorage.getItem('showInstruction') == null) {
-            window.sessionStorage.setItem('showInstruction', 'showed');
-            this.isPaused = true;
-            this.timerBar.node.active = false;
-            let node = find("Canvas/Instruction");
-            node.active = true;
+        this.isPaused = true;
 
-            this.scheduleOnce(() => {
-                node.active = false;
-                this.timerBar.node.active = true;
-                this.isPaused = false;
-            }, 2);
+        this.node.parent.setSiblingIndex(3);
+
+    }
+
+    update(deltaTime: number) {
+        if (this.isPaused) return;
+
+        this.timerBar.progress = Math.max(0.3, 0.3 + (this.timer / this.maxTime) * 0.7);
+        this.multiplierBar.progress = Math.max(0.3, 0.3 + this.multiplierProgress * 0.7);
+
+        this.multiplierLabel.string = this.multiplier.toFixed(1) + "x";
+
+        if (this.timer <= 0 && !this.isLost) {
+            this.playerMovement.knockAway();
+            this.lose();
+        }
+        else {
+            this.timer -= deltaTime * this.timerTimeScale * this.difficultyScale;
+
+            if (this.multiplierProgress > 0) {
+                this.multiplierProgress -= deltaTime * 0.3 * this.multiplier * this.multiplierTimeScale;
+            }
+            else {
+                if (this.multiplier >= 1.1) {
+                    this.multiplierProgress = 1;
+                    this.multiplier -= 0.1;
+                }
+            }
         }
     }
+
 
     lose() {
         this.isLost = true;
@@ -96,34 +128,38 @@ export class GameController extends Component {
         }
 
         this.scheduleOnce(() => {
-            director.loadScene("scene");
-
+            this.node.parent.destroy();
+            instantiate(this.gameplay).setParent(this.node.parent.parent);
         }, 2);
     }
 
     addScore(score: number) {
-        this.score += score;
+        let actualScore = Math.round(score * this.multiplier);
+        this.score += actualScore;
         let bestScore = parseInt(sys.localStorage.getItem('bestScore'));
         this.scoreLabel.string = "Score: " + this.score + "\nBest Score: " + (this.score > bestScore ? this.score : bestScore);
 
         let floatingScore = this.findActiveFloatingScore();
-        let label = floatingScore.getComponent(Label);
-        let rigidBody2D = floatingScore.getComponent(RigidBody2D);
+        let label = floatingScore.label;
+        let rigidBody2D = floatingScore.rigidBody;
 
-        floatingScore.setPosition(0, -400, 0);
-        label.string = "+" + score;
+        label.string = "+" + actualScore.toFixed();
         label.fontSize = 50 + score * 3;
-        //label.color = Color.RED;
-        rigidBody2D.applyForceToCenter(new Vec2(randomRange(-1, 1) * 500, randomRange(1000, 1500)), true);
-        this.scheduleOnce(() => {
-            floatingScore.active = false;
-            rigidBody2D.linearVelocity = Vec2.ZERO;
-        }, 1);
+        if (score < 15) {
+            label.color = Color.WHITE;
+        }
+        else if (score < 20) {
+            label.color = Color.CYAN;
+        }
+        else {
+            label.color = Color.YELLOW;
+        }
+        rigidBody2D.applyForceToCenter(new Vec2(randomRange(-1, 1) * 500, randomRange(2000, 2500)), true);
     }
 
-    findActiveFloatingScore(): Node {
+    findActiveFloatingScore(): FloatingNumber {
         for (var i = 0; i < this.pool_floatingScore.length; i++) {
-            if (!this.pool_floatingScore[i].active) { this.pool_floatingScore[i].active = true; return this.pool_floatingScore[i]; }
+            if (!this.pool_floatingScore[i].node.active) { this.pool_floatingScore[i].node.active = true; return this.pool_floatingScore[i]; }
         }
     }
 
@@ -132,20 +168,47 @@ export class GameController extends Component {
         this.scoreLabel.string = "Score: " + this.score + "\nBest Score: 0";
     }
 
-    update(deltaTime: number) {
-        if (this.isPaused) return;
-
-        this.timerBar.progress = this.timer / this.maxTime;
-
-        if (this.timer <= 0 && !this.isLost) {
-            this.playerMovement.knockAway();
-            this.lose();
-        }
-        else {
-            this.timer -= deltaTime;
-        }
+    confirmResetBestScore() {
+        this.confirmResetBestScoreNode.active = !this.confirmResetBestScoreNode.active;
+        this.isPaused = this.confirmResetBestScoreNode.active;
     }
 
+    increaseMultiplier(add: number) {
+        this.multiplierProgress += add;
+        if (this.multiplierProgress >= 1) {
+            this.multiplierProgress = 0.01;
+            this.multiplier += 0.1;
+            this.setAndRevertMultiplierTimeScale(0, 0.4);
+        };
+    }
+
+    setAndRevertMultiplierTimeScale(timeScale: number, duration: number) {
+        this.multiplierTimeScale = timeScale;
+        this.scheduleOnce(() => {
+            this.multiplierTimeScale = 1;
+        }, duration);
+    }
+
+    setDifficultyScale(diff: number) {
+        this.difficultyScale = diff;
+    }
+
+    addTimerTime(time: number) {
+        this.timer += time;
+        if (this.timer > this.maxTime) this.timer = this.maxTime;
+
+    }
+
+    setTimerTimeScale(timeScale: number, duration: number) {
+        console.log("Set time scale = " + timeScale + " for " + duration + " seconds");
+        this.unschedule(this.resetTimerTimeScale);
+        this.timerTimeScale = timeScale;
+        this.scheduleOnce(this.resetTimerTimeScale, duration);
+    }
+
+    resetTimerTimeScale() {
+        this.timerTimeScale = 1;
+    }
 }
 
 /**

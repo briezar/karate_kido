@@ -47,13 +47,57 @@
         },
         "time": "2-20-2022 23:37",
         "dirty": false
+      },
+      "1648833617167": {
+        "id": "1648833617167",
+        "progress": 1,
+        "state": "success",
+        "message": "4-5-2022 16:03 Build success in 17637 ms!",
+        "options": {
+          "name": "viet_karatekido2",
+          "platform": "web-mobile",
+          "buildPath": "project://build",
+          "debug": false,
+          "md5Cache": false,
+          "sourceMaps": false,
+          "replaceSplashScreen": false,
+          "mainBundleCompressionType": "merge_dep",
+          "mainBundleIsRemote": false,
+          "mergeStartScene": false,
+          "experimentalEraseModules": false,
+          "compressTexture": true,
+          "packAutoAtlas": true,
+          "startScene": "30d67e68-52e9-4fb6-b934-f12d44e13d78",
+          "scenes": [
+            {
+              "url": "db://assets/scene.scene",
+              "uuid": "30d67e68-52e9-4fb6-b934-f12d44e13d78",
+              "inBundle": false
+            }
+          ],
+          "outputName": "viet_karatekido2",
+          "packages": {
+            "web-mobile": {
+              "orientation": "auto",
+              "polyfills": {
+                "asyncFunctions": true
+              }
+            },
+            "cocos-service": {
+              "configID": "b8dc91",
+              "services": []
+            }
+          }
+        },
+        "time": "4-5-2022 16:03",
+        "dirty": false
       }
     }
   },
   "common": {
-    "outputName": "viet_treechopper",
+    "outputName": "viet_karatekido2",
     "mainBundleCompressionType": "merge_dep",
     "platform": "web-mobile",
-    "name": "viet_treechopper"
+    "name": "viet_karatekido2"
   }
 }

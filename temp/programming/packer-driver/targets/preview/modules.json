@@ -1,6 +1,6 @@
 {
   "cce:/internal/x/cc": {
-    "mTimestamp": 10122.340099997818,
+    "mTimestamp": 16760.989699997008,
     "chunkId": "quick-pack:/cce/internal/x/cc.js",
     "imports": [
       {
@@ -317,11 +317,11 @@
     ]
   },
   "cce:/internal/x/prerequisite-imports": {
-    "mTimestamp": 23101.076400000602,
+    "mTimestamp": 44055.366099998355,
     "chunkId": "quick-pack:/cce/internal/x/prerequisite-imports.js",
     "imports": [
       {
-        "value": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts",
+        "value": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/BackgroundCanvas.ts",
         "rewritten": "__unresolved_0",
         "loc": {
           "start": {
@@ -330,12 +330,12 @@
           },
           "end": {
             "line": 4,
-            "column": 79
+            "column": 81
           }
         }
       },
       {
-        "value": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts",
+        "value": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/FloatingNumber.ts",
         "rewritten": "__unresolved_1",
         "loc": {
           "start": {
@@ -349,7 +349,7 @@
         }
       },
       {
-        "value": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts",
+        "value": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts",
         "rewritten": "__unresolved_2",
         "loc": {
           "start": {
@@ -358,12 +358,12 @@
           },
           "end": {
             "line": 6,
-            "column": 77
+            "column": 79
           }
         }
       },
       {
-        "value": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts",
+        "value": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts",
         "rewritten": "__unresolved_3",
         "loc": {
           "start": {
@@ -372,6 +372,62 @@
           },
           "end": {
             "line": 7,
+            "column": 79
+          }
+        }
+      },
+      {
+        "value": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts",
+        "rewritten": "__unresolved_4",
+        "loc": {
+          "start": {
+            "line": 8,
+            "column": 7
+          },
+          "end": {
+            "line": 8,
+            "column": 77
+          }
+        }
+      },
+      {
+        "value": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TapToPlay.ts",
+        "rewritten": "__unresolved_5",
+        "loc": {
+          "start": {
+            "line": 9,
+            "column": 7
+          },
+          "end": {
+            "line": 9,
+            "column": 74
+          }
+        }
+      },
+      {
+        "value": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeBlock.ts",
+        "rewritten": "__unresolved_6",
+        "loc": {
+          "start": {
+            "line": 10,
+            "column": 7
+          },
+          "end": {
+            "line": 10,
+            "column": 74
+          }
+        }
+      },
+      {
+        "value": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts",
+        "rewritten": "__unresolved_7",
+        "loc": {
+          "start": {
+            "line": 11,
+            "column": 7
+          },
+          "end": {
+            "line": 11,
             "column": 76
           }
         }
@@ -381,6 +437,14 @@
       "type": "esm"
     },
     "resolvedImports": [
+      {
+        "isExternal": false,
+        "url": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/BackgroundCanvas.ts"
+      },
+      {
+        "isExternal": false,
+        "url": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/FloatingNumber.ts"
+      },
       {
         "isExternal": false,
         "url": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts"
@@ -395,12 +459,20 @@
       },
       {
         "isExternal": false,
+        "url": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TapToPlay.ts"
+      },
+      {
+        "isExternal": false,
+        "url": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeBlock.ts"
+      },
+      {
+        "isExternal": false,
         "url": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts"
       }
     ]
   },
   "cce:/internal/code-quality/cr.mjs": {
-    "mTimestamp": 1645435212545,
+    "mTimestamp": 1654026592975,
     "chunkId": "quick-pack:/cce/internal/code-quality/cr.js",
     "imports": [],
     "modLoMetadata": {
@@ -680,8 +752,43 @@
       }
     ]
   },
+  "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/BackgroundCanvas.ts": {
+    "mTimestamp": 1649100282757.0264,
+    "chunkId": "assets/Scripts/BackgroundCanvas.js",
+    "imports": [
+      {
+        "value": "cc"
+      },
+      {
+        "value": "cc",
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 103
+          },
+          "end": {
+            "line": 2,
+            "column": 107
+          }
+        }
+      }
+    ],
+    "modLoMetadata": {
+      "type": "esm"
+    },
+    "resolvedImports": [
+      {
+        "isExternal": false,
+        "url": "cce:/internal/x/cc"
+      },
+      {
+        "isExternal": false,
+        "url": "cce:/internal/x/cc"
+      }
+    ]
+  },
   "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts": {
-    "mTimestamp": 1645434627611.2688,
+    "mTimestamp": 1649147841381.5508,
     "chunkId": "assets/Scripts/GameController.js",
     "imports": [
       {
@@ -696,16 +803,16 @@
         "loc": {
           "start": {
             "line": 2,
-            "column": 173
+            "column": 194
           },
           "end": {
             "line": 2,
-            "column": 177
+            "column": 198
           }
         }
       },
       {
-        "value": "./PlayerMovement",
+        "value": "./FloatingNumber",
         "rewritten": "__unresolved_1",
         "loc": {
           "start": {
@@ -714,6 +821,20 @@
           },
           "end": {
             "line": 3,
+            "column": 49
+          }
+        }
+      },
+      {
+        "value": "./PlayerMovement",
+        "rewritten": "__unresolved_2",
+        "loc": {
+          "start": {
+            "line": 4,
+            "column": 31
+          },
+          "end": {
+            "line": 4,
             "column": 49
           }
         }
@@ -737,13 +858,52 @@
       },
       {
         "isExternal": false,
+        "url": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/FloatingNumber.ts"
+      },
+      {
+        "isExternal": false,
         "url": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts"
       }
     ]
   },
-  "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts": {
-    "mTimestamp": 1645434627615.259,
-    "chunkId": "assets/Scripts/TreeManager.js",
+  "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/FloatingNumber.ts": {
+    "mTimestamp": 1649148563086.1128,
+    "chunkId": "assets/Scripts/FloatingNumber.js",
+    "imports": [
+      {
+        "value": "cc"
+      },
+      {
+        "value": "cc",
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 81
+          },
+          "end": {
+            "line": 2,
+            "column": 85
+          }
+        }
+      }
+    ],
+    "modLoMetadata": {
+      "type": "esm"
+    },
+    "resolvedImports": [
+      {
+        "isExternal": false,
+        "url": "cce:/internal/x/cc"
+      },
+      {
+        "isExternal": false,
+        "url": "cce:/internal/x/cc"
+      }
+    ]
+  },
+  "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TapToPlay.ts": {
+    "mTimestamp": 1649146823433.802,
+    "chunkId": "assets/Scripts/TapToPlay.js",
     "imports": [
       {
         "value": "cce:/internal/code-quality/cr.mjs",
@@ -757,11 +917,11 @@
         "loc": {
           "start": {
             "line": 2,
-            "column": 126
+            "column": 74
           },
           "end": {
             "line": 2,
-            "column": 130
+            "column": 78
           }
         }
       },
@@ -776,20 +936,6 @@
           "end": {
             "line": 3,
             "column": 49
-          }
-        }
-      },
-      {
-        "value": "./SoundManager",
-        "rewritten": "__unresolved_2",
-        "loc": {
-          "start": {
-            "line": 5,
-            "column": 29
-          },
-          "end": {
-            "line": 5,
-            "column": 45
           }
         }
       }
@@ -813,15 +959,54 @@
       {
         "isExternal": false,
         "url": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts"
+      }
+    ]
+  },
+  "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeBlock.ts": {
+    "mTimestamp": 1648735229158.848,
+    "chunkId": "assets/Scripts/TreeBlock.js",
+    "imports": [
+      {
+        "value": "cce:/internal/code-quality/cr.mjs",
+        "rewritten": "__unresolved_0"
+      },
+      {
+        "value": "cc"
+      },
+      {
+        "value": "cc",
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 140
+          },
+          "end": {
+            "line": 2,
+            "column": 144
+          }
+        }
+      }
+    ],
+    "modLoMetadata": {
+      "type": "esm"
+    },
+    "resolvedImports": [
+      {
+        "isExternal": false,
+        "url": "cce:/internal/code-quality/cr.mjs"
       },
       {
         "isExternal": false,
-        "url": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts"
+        "url": "cce:/internal/x/cc"
+      },
+      {
+        "isExternal": false,
+        "url": "cce:/internal/x/cc"
       }
     ]
   },
   "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/PlayerMovement.ts": {
-    "mTimestamp": 1645434627612.2664,
+    "mTimestamp": 1649148620746.0803,
     "chunkId": "assets/Scripts/PlayerMovement.js",
     "imports": [
       {
@@ -836,11 +1021,11 @@
         "loc": {
           "start": {
             "line": 2,
-            "column": 230
+            "column": 253
           },
           "end": {
             "line": 2,
-            "column": 234
+            "column": 257
           }
         }
       },
@@ -918,7 +1103,7 @@
     ]
   },
   "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts": {
-    "mTimestamp": 1645434627614.261,
+    "mTimestamp": 1649066046238.9731,
     "chunkId": "assets/Scripts/SoundManager.js",
     "imports": [
       {
@@ -949,6 +1134,103 @@
       {
         "isExternal": false,
         "url": "cce:/internal/x/cc"
+      }
+    ]
+  },
+  "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeManager.ts": {
+    "mTimestamp": 1648742492821.83,
+    "chunkId": "assets/Scripts/TreeManager.js",
+    "imports": [
+      {
+        "value": "cce:/internal/code-quality/cr.mjs",
+        "rewritten": "__unresolved_0"
+      },
+      {
+        "value": "cc"
+      },
+      {
+        "value": "cc",
+        "loc": {
+          "start": {
+            "line": 2,
+            "column": 162
+          },
+          "end": {
+            "line": 2,
+            "column": 166
+          }
+        }
+      },
+      {
+        "value": "./GameController",
+        "rewritten": "__unresolved_1",
+        "loc": {
+          "start": {
+            "line": 3,
+            "column": 31
+          },
+          "end": {
+            "line": 3,
+            "column": 49
+          }
+        }
+      },
+      {
+        "value": "./SoundManager",
+        "rewritten": "__unresolved_2",
+        "loc": {
+          "start": {
+            "line": 5,
+            "column": 29
+          },
+          "end": {
+            "line": 5,
+            "column": 45
+          }
+        }
+      },
+      {
+        "value": "./TreeBlock",
+        "rewritten": "__unresolved_3",
+        "loc": {
+          "start": {
+            "line": 6,
+            "column": 26
+          },
+          "end": {
+            "line": 6,
+            "column": 39
+          }
+        }
+      }
+    ],
+    "modLoMetadata": {
+      "type": "esm"
+    },
+    "resolvedImports": [
+      {
+        "isExternal": false,
+        "url": "cce:/internal/code-quality/cr.mjs"
+      },
+      {
+        "isExternal": false,
+        "url": "cce:/internal/x/cc"
+      },
+      {
+        "isExternal": false,
+        "url": "cce:/internal/x/cc"
+      },
+      {
+        "isExternal": false,
+        "url": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/GameController.ts"
+      },
+      {
+        "isExternal": false,
+        "url": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/SoundManager.ts"
+      },
+      {
+        "isExternal": false,
+        "url": "file:///D:/Cocos/Projects/TreeChopper/assets/Scripts/TreeBlock.ts"
       }
     ]
   }

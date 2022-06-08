@@ -1,8 +1,9 @@
 
-import { _decorator, Component, Node, Prefab, instantiate, Vec3, RigidBody2D, Vec2, game, director, UITransform, clamp } from 'cc';
+import { _decorator, Component, Node, Prefab, instantiate, Vec3, RigidBody2D, Vec2, game, director, UITransform, clamp, tween, easing, random, SpriteFrame } from 'cc';
 import { GameController } from './GameController';
 import { PlayerMovement } from './PlayerMovement';
 import { SoundManager } from './SoundManager';
+import { TreeBlock } from './TreeBlock';
 const { ccclass, property } = _decorator;
 
 /**
@@ -16,28 +17,34 @@ const { ccclass, property } = _decorator;
  * ManualUrl = https://docs.cocos.com/creator/3.4/manual/en/
  *
  */
-enum TreeType { Tree, TreeWithStick }
 
 @ccclass('TreeManager')
 export class TreeManager extends Component {
-    @property({ type: Prefab })
-    public treePrefab: Prefab;
+    @property({ type: Prefab }) public treeBlockPrefab: Prefab;
 
-    @property({ type: Prefab })
-    public treeWithStickPrefab: Prefab;
+    @property({ type: SpriteFrame }) public hitStates2x: SpriteFrame[] = [];
+    @property({ type: SpriteFrame }) public hitStates3x: SpriteFrame[] = [];
+    @property({ type: SpriteFrame }) public hitStates4x: SpriteFrame[] = [];
+
+    @property({ type: SpriteFrame }) public stick2x: SpriteFrame[] = [];
+    @property({ type: SpriteFrame }) public stick3x: SpriteFrame[] = [];
+    @property({ type: SpriteFrame }) public stick4x: SpriteFrame[] = [];
+
+    @property({ type: SpriteFrame }) public lantern: SpriteFrame[] = [];
 
     playerMovement: PlayerMovement;
 
-    treeArray: Node[] = [];
+    treeArray: TreeBlock[] = [];
 
     treeHeight: number;
     dropSpeed: number = 1000;
 
-    pool_Tree: Node[] = [];
-    pool_TreeWithStick: Node[] = [];
-
     lastPosition: number = -1;
     timeSinceLastChop: number = 0;
+
+    treeCounter = 0;
+    noStickCounter = 0;
+    isLastBlockNot1x: boolean = false;
 
     onLoad() {
         this.populateStartingTrees();
@@ -46,37 +53,39 @@ export class TreeManager extends Component {
     update(deltaTime: number) {
 
         //Move to position when chop fast
-        if (this.treeArray[0].position.y > this.treeHeight) {
-            this.treeArray[0].setPosition(0, this.treeHeight, 0);
+        if (this.treeArray[0].node.position.y > this.treeHeight) {
+            this.treeArray[0].node.setPosition(0, this.treeHeight, 0);
         }
 
         //Move first block
-        if (this.treeArray[0].position.y > 0.01) {
-            this.treeArray[0].setPosition(0, this.treeArray[0].position.y - this.dropSpeed * deltaTime, 0);
+        if (this.treeArray[0].node.position.y > 0.01) {
+            this.treeArray[0].node.setPosition(0, this.treeArray[0].node.position.y - this.dropSpeed * deltaTime, 0);
         }
-        else if (this.treeArray[0].position.y < 0.01) {
-            this.treeArray[0].setPosition(0, 0, 0);
+        else if (this.treeArray[0].node.position.y < 0.01) {
+            this.treeArray[0].node.setPosition(0, 0, 0);
         }
 
         //Next block sticks to previous block
         for (var i = 1; i < this.treeArray.length; i++) {
-            this.treeArray[i].setPosition(0, this.treeArray[i - 1].position.y + this.treeHeight, 0);
+            this.treeArray[i].node.setPosition(0, this.treeArray[i - 1].node.position.y + this.treeHeight, 0);
         }
 
         this.timeSinceLastChop += deltaTime;
     }
 
     chopTree() {
-        if (this.playerMovement.node.scale.x == this.treeArray[0].scale.x && this.treeArray[0].name == "TreeWithStick") {
+        if (this.playerMovement.node.scale.x == this.treeArray[0].getStickSide()) {
             this.playerMovement.knockAway();
             GameController.Instance.lose();
             return;
         }
+
+        GameController.Instance.increaseMultiplier(0.15);
+
         let score: number = 10;
         SoundManager.Instance.playWoodChopSound();
 
-        GameController.Instance.timer += 0.5;
-        if (GameController.Instance.timer > GameController.Instance.maxTime) GameController.Instance.timer = GameController.Instance.maxTime;
+        GameController.Instance.addTimerTime(0.5 / GameController.Instance.difficultyScale);
 
         let position = this.playerMovement.node.scale.x;
         if (position != this.lastPosition) {
@@ -88,86 +97,135 @@ export class TreeManager extends Component {
         if (this.timeSinceLastChop < 0.2) score += 5;
 
         GameController.Instance.addScore(score);
+        this.checkForBuff(this.treeArray[1]);
+
+        if (!this.treeArray[0].isChopped()) {
+            return;
+        }
 
         var choppedTree = this.treeArray.shift();
-        choppedTree.getComponent(RigidBody2D).linearVelocity = new Vec2(this.playerMovement.node.scale.x * -100, 0);
-        this.scheduleOnce(() => {
-            choppedTree.getComponent(RigidBody2D).linearVelocity = Vec2.ZERO;
-            choppedTree.active = false;
-        }, 1);
-        this.addRandomTree();
+
+        tween(choppedTree.node).by(0.5, { position: new Vec3(this.playerMovement.node.scale.x * -300, 0) },
+            {
+                onUpdate: () => {
+                    choppedTree.uiOpacity.opacity -= 10;
+                },
+                easing: 'quartOut'
+            })
+            .call(() => {
+                choppedTree.reset();
+            }).start();
+
+        this.checkForBuff(this.treeArray[1]);
+
         this.lastPosition = this.playerMovement.node.scale.x;
         this.timeSinceLastChop = 0;
 
-        if (this.playerMovement.node.scale.x == this.treeArray[0].scale.x && this.treeArray[0].name == "TreeWithStick") {
+        if (this.playerMovement.node.scale.x == this.treeArray[0].getStickSide()) {
             this.playerMovement.knockDown();
             GameController.Instance.lose();
         }
     }
 
-    populateStartingTrees() {
-        for (var i = 0; i < 20; i++) {
-            this.pool_Tree.push(instantiate(this.treePrefab));
-            this.pool_Tree[i].active = false;
-            this.pool_Tree[i].setParent(this.node);
-
-            this.pool_TreeWithStick.push(instantiate(this.treeWithStickPrefab));
-            this.pool_TreeWithStick[i].active = false;
-            this.pool_TreeWithStick[i].setParent(this.node);
+    checkForBuff(treeBlock: TreeBlock) {
+        if (this.playerMovement.node.scale.x != treeBlock.getStickSide()) {
+            return;
         }
+        switch (treeBlock.buffType) {
+            case 0:
 
-        this.treeArray[0] = this.node.getChildByName("Tree");
+                break;
+            case 1:
+                treeBlock.playBuffAnimation();
+                GameController.Instance.addTimerTime(3);
+                console.log("Add time: 3");
+                break;
+            case 2:
+                treeBlock.playBuffAnimation();
+                GameController.Instance.setTimerTimeScale(0.5, 3);
+                break;
+            default:
+        }
+    }
+
+    populateStartingTrees() {
+        this.treeArray[0] = this.node.children[0].getComponent(TreeBlock);
+        this.treeArray[0].treeManager = this;
         this.treeHeight = this.treeArray[0].getComponent(UITransform).height;
 
-        this.treeArray[1] = this.findActiveTree(TreeType.Tree);
-        this.treeArray[1].setPosition(0, this.treeHeight * this.treeArray.length, 0);
+        this.treeArray.push(instantiate(this.treeBlockPrefab).getComponent(TreeBlock));
+        this.treeArray[1].treeManager = this;
+        this.treeArray[1].node.setParent(this.node);
+        this.treeArray[1].node.setPosition(0, this.treeHeight * this.treeArray.length, 0);
 
-        for (var i = 2; i < 10; i++) {
-            this.addRandomTree();
+        for (var i = 2; i < 20; i++) {
+            this.treeArray.push(instantiate(this.treeBlockPrefab).getComponent(TreeBlock));
+            this.treeArray[i].treeManager = this;
+            this.treeArray[i].node.setParent(this.node);
+            this.setupNextTree();
+
         }
 
     }
 
-    addRandomTree() {
-        var tree;
-        if (this.treeArray[this.treeArray.length - 1].name == "TreeWithStick") {
-            tree = this.findActiveTree(TreeType.Tree);
+    setupNextTree() {
+        var tree = this.treeArray[this.treeArray.length - 1];
+        if (this.treeArray[this.treeArray.length - 2].getStickSide() != 0) { //if tree below has stick
+            tree.setup();
         }
         else {
-            if (Math.random() > 0.5) {
-                tree = this.findActiveTree(TreeType.Tree);
-            }
-            else {
-                tree = this.findActiveTree(TreeType.TreeWithStick);
-
-                if (Math.random() > 0.5) tree.setScale(-1, 1, 1); //flip
-                else tree.setScale(1, 1, 1);
-            }
+            tree.setup(1, 'random');
         }
-        tree.setPosition(0, this.treeHeight * this.treeArray.length, 0);
-        this.treeArray.push(tree);
+
+        tree.node.setPosition(0, this.treeHeight * this.treeArray.length, 0);
     }
 
-    findActiveTree(treeType: TreeType): Node {
-        if (treeType == TreeType.Tree) {
-            for (var i = 0; i < this.pool_Tree.length; i++) {
-                if (!this.pool_Tree[i].active) { this.pool_Tree[i].active = true; return this.pool_Tree[i];}
-            }
-            for (var j = 0; j < this.pool_TreeWithStick.length; j++) {
-                if (!this.pool_TreeWithStick[j].active) { this.pool_TreeWithStick[i].active = true; return this.pool_TreeWithStick[j]; }
-            }
+    setupScaleWithTreeCounter() {
+        this.treeCounter++;
+        GameController.Instance.setDifficultyScale(Math.min(1.7, 1 + this.treeCounter / 100));
+
+        var tree = this.treeArray[this.treeArray.length - 1];
+        tree.node.setPosition(0, this.treeHeight * this.treeArray.length, 0);
+
+        let random = Math.random();
+
+        if (random < 0.90 || this.isLastBlockNot1x) {
+            this.setup1x();
+            this.isLastBlockNot1x = false;
+        }
+        else if (random < 0.95) {
+            this.setup2x();
+        }
+        else if (random < 0.98) {
+            this.setup3x();
+        }
+        else {
+            this.setup4x();
         }
 
-        else if (treeType == TreeType.TreeWithStick) {
-            for (var i = 0; i < this.pool_TreeWithStick.length; i++) {
-                if (!this.pool_TreeWithStick[i].active) { this.pool_TreeWithStick[i].active = true; return this.pool_TreeWithStick[i]; }
-            }
-            for (var j = 0; j < this.pool_Tree.length; j++) {
-                if (!this.pool_Tree[j].active) { this.pool_Tree[i].active = true; return this.pool_Tree[j]; }
-            }
-        }
+    }
 
-        return null;
+    setup4x() {
+        let tree = this.treeArray[this.treeArray.length - 1];
+        tree.setup(4, 'random', this.hitStates4x, this.stick4x, 'random', this.lantern);
+        this.isLastBlockNot1x = true;
+    }
+
+    setup3x() {
+        let tree = this.treeArray[this.treeArray.length - 1];
+        tree.setup(3, 'random', this.hitStates3x, this.stick3x, 'random', this.lantern);
+        this.isLastBlockNot1x = true;
+    }
+
+    setup2x() {
+        let tree = this.treeArray[this.treeArray.length - 1];
+        tree.setup(2, 'random', this.hitStates2x, this.stick2x, 'random', this.lantern);
+        this.isLastBlockNot1x = true;
+    }
+
+    setup1x() {
+        let tree = this.treeArray[this.treeArray.length - 1];
+        tree.setup(1, 'random', [], [], 'random', this.lantern);
     }
 }
 

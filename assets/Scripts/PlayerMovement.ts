@@ -1,5 +1,5 @@
 
-import { _decorator, Component, Node, systemEvent, SystemEventType, EventKeyboard, KeyCode, Vec3, resources, Asset, SpriteFrame, Sprite, Scheduler, RigidBody2D, Vec2, UITransform, random, randomRange, ERigidBody2DType, sys } from 'cc';
+import { _decorator, Component, Node, systemEvent, SystemEventType, EventKeyboard, KeyCode, Vec3, resources, Asset, SpriteFrame, Sprite, Scheduler, RigidBody2D, Vec2, UITransform, random, randomRange, ERigidBody2DType, sys, debug, randomRangeInt } from 'cc';
 import { GameController } from './GameController';
 import { SoundManager } from './SoundManager';
 import { TreeManager } from './TreeManager';
@@ -19,18 +19,20 @@ const { ccclass, property } = _decorator;
 
 @ccclass('PlayerMovement')
 export class PlayerMovement extends Component {
-    @property({ type: TreeManager })
-    public treeManager: TreeManager;
+    @property({ type: TreeManager }) public treeManager: TreeManager;
 
     distanceFromTree: number;
-    axeLevel: number = 0;
+    beltLevel: number = 0;
     spriteDirectory: string[][] =
         [
-            ["lumberjackSilver_0/spriteFrame", "lumberjackSilver_1/spriteFrame"],
-            ["lumberjackGold_0/spriteFrame", "lumberjackGold_1/spriteFrame"]
+            ["char-1/spriteFrame", "char-hit/spriteFrame", "char-kick/spriteFrame"],
+            ["char-1/spriteFrame", "char-hit/spriteFrame", "char-kick/spriteFrame"]
         ];
 
     //Player is on the left when scale.x = -1;
+    @property({ type: SpriteFrame }) public idleAnimSpFr: SpriteFrame[] = [];
+    idleAnimFrame: number = 0;
+    @property({ type: SpriteFrame }) public deathAnimSpFr: SpriteFrame[] = [];
     spriteArray: SpriteFrame[] = [];
     sprite: Sprite;
     rigidBody2D: RigidBody2D;
@@ -43,18 +45,24 @@ export class PlayerMovement extends Component {
         this.distanceFromTree = Math.abs(this.node.position.x);
         this.treeManager.playerMovement = this;
         if (parseInt(sys.localStorage.getItem('bestScore')) > 1000) {
-            this.axeLevel++;
+            this.beltLevel++;
         }
 
-        resources.load(this.spriteDirectory[this.axeLevel][0], SpriteFrame, (err, spriteFrame) => {
+        resources.load(this.spriteDirectory[this.beltLevel][0], SpriteFrame, (err, spriteFrame) => {
             this.spriteArray.push(spriteFrame);
             this.sprite.spriteFrame = spriteFrame;
 
         });
 
-        resources.load(this.spriteDirectory[this.axeLevel][1], SpriteFrame, (err, spriteFrame) => {
+        resources.load(this.spriteDirectory[this.beltLevel][1], SpriteFrame, (err, spriteFrame) => {
             this.spriteArray.push(spriteFrame);
         });
+
+        resources.load(this.spriteDirectory[this.beltLevel][2], SpriteFrame, (err, spriteFrame) => {
+            this.spriteArray.push(spriteFrame);
+        });
+
+        this.schedule(this.playIdleAnimation, 0.4, Infinity);
     }
 
     onKeyDown(event: EventKeyboard) {
@@ -74,30 +82,34 @@ export class PlayerMovement extends Component {
 
     chopRight() {
         this.node.setScale(1, 1, 1);
-        this.node.setPosition(this.distanceFromTree, this.node.position.y, 0);
-        this.treeManager.chopTree();
+        this.node.setPosition(this.distanceFromTree, this.node.position.y);
         this.playChopAnimation();
+        this.treeManager.chopTree();
     }
 
     chopLeft() {
         this.node.setScale(-1, 1, 1);
-        this.node.setPosition(-this.distanceFromTree, this.node.position.y, 0);
-        this.treeManager.chopTree();
+        this.node.setPosition(-this.distanceFromTree, this.node.position.y);
         this.playChopAnimation();
+        this.treeManager.chopTree();
     }
 
 
     knockDown() {
+        this.unschedule(this.stopChopAnimation);
         this.scheduleOnce(() => {
-            this.rigidBody2D.linearVelocity = new Vec2(0, -20);
             SoundManager.Instance.playSound(SoundManager.Instance.bonkSound);
         }, 0.1);
+        this.schedule(() => {
+            let deathSprite = this.deathAnimSpFr.shift();
+            this.sprite.spriteFrame = deathSprite;
+        }, 0.15, 2, 0.1);
     }
 
     knockAway() {
         SoundManager.Instance.playSound(SoundManager.Instance.punchSound);
-        this.rigidBody2D.angularVelocity = this.node.scale.x * 60;
-        this.rigidBody2D.linearVelocity = new Vec2(this.node.scale.x * 40, randomRange(15, 20));
+        this.rigidBody2D.angularVelocity = this.node.scale.x * -10;
+        this.rigidBody2D.linearVelocity = new Vec2(this.node.scale.x * 70, randomRange(15, 20));
 
     }
 
@@ -105,7 +117,7 @@ export class PlayerMovement extends Component {
         this.unschedule(this.stopChopAnimation);
         this.sprite.spriteFrame = this.spriteArray[0];
         this.scheduleOnce(() => {
-            this.sprite.spriteFrame = this.spriteArray[1];
+            this.sprite.spriteFrame = this.spriteArray[randomRangeInt(1, this.spriteArray.length)];
         }, 0.05);
 
         this.scheduleOnce(this.stopChopAnimation, 0.2);
@@ -115,6 +127,16 @@ export class PlayerMovement extends Component {
         this.sprite.spriteFrame = this.spriteArray[0];
     }
 
+    playIdleAnimation() {
+        let index = Math.min(this.idleAnimSpFr.length - 1, this.idleAnimFrame);
+        this.sprite.spriteFrame = this.idleAnimSpFr[index];
+        this.idleAnimFrame++;
+        this.idleAnimFrame %= 4;
+    }
+
+    unschedulePlayIdleAnim() {
+        this.unschedule(this.playIdleAnimation);
+    }
     //update (deltaTime: number) {
 
     //}

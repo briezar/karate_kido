@@ -46,39 +46,41 @@
   "assets/Scripts/GameController.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_1": "assets/Scripts/PlayerMovement.js",
+      "__unresolved_1": "assets/Scripts/FloatingNumber.js",
+      "__unresolved_2": "assets/Scripts/PlayerMovement.js",
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js"
     },
     "physicalLocation": "fs/0/assets/Scripts/GameController.js",
-    "mTimestamp": 1645435235330
+    "mTimestamp": 1654026635697
   },
   "assets/Scripts/TreeManager.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js",
       "__unresolved_1": "assets/Scripts/GameController.js",
+      "__unresolved_3": "assets/Scripts/TreeBlock.js",
       "__unresolved_2": "assets/Scripts/SoundManager.js",
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js"
     },
     "physicalLocation": "fs/0/assets/Scripts/TreeManager.js",
-    "mTimestamp": 1645435235445
+    "mTimestamp": 1654026636091
   },
   "assets/Scripts/SoundManager.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/Scripts/SoundManager.js",
-    "mTimestamp": 1645435235478
+    "mTimestamp": 1654026636342
   },
   "assets/Scripts/PlayerMovement.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_3": "assets/Scripts/TreeManager.js",
       "__unresolved_1": "assets/Scripts/GameController.js",
+      "__unresolved_3": "assets/Scripts/TreeManager.js",
       "__unresolved_2": "assets/Scripts/SoundManager.js",
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js"
     },
     "physicalLocation": "fs/0/assets/Scripts/PlayerMovement.js",
-    "mTimestamp": 1645435235143
+    "mTimestamp": 1654026636300
   },
   "assets/Scripts/BgmPersist.js": {
     "imports": {
@@ -86,6 +88,37 @@
     },
     "physicalLocation": "fs/0/assets/Scripts/BgmPersist.js",
     "mTimestamp": 1645355698677
+  },
+  "assets/Scripts/TreeBlock.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js"
+    },
+    "physicalLocation": "fs/0/assets/Scripts/TreeBlock.js",
+    "mTimestamp": 1654026636203
+  },
+  "assets/Scripts/TapToPlay.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/Scripts/GameController.js",
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js"
+    },
+    "physicalLocation": "fs/0/assets/Scripts/TapToPlay.js",
+    "mTimestamp": 1654026635849
+  },
+  "assets/Scripts/BackgroundCanvas.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js"
+    },
+    "physicalLocation": "fs/0/assets/Scripts/BackgroundCanvas.js",
+    "mTimestamp": 1654026635811
+  },
+  "assets/Scripts/FloatingNumber.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js"
+    },
+    "physicalLocation": "fs/0/assets/Scripts/FloatingNumber.js",
+    "mTimestamp": 1654026635439
   },
   "quick-pack:/cce/internal/x/cc.js": {
     "imports": {
@@ -175,25 +208,29 @@
       }
     },
     "physicalLocation": "cce/internal/x/cc.js",
-    "mTimestamp": 1645435234389,
+    "mTimestamp": 1654026634383,
     "isEntry": true,
     "exposeAs": "cce:/internal/x/cc"
   },
   "quick-pack:/cce/internal/x/prerequisite-imports.js": {
     "imports": {
-      "__unresolved_1": "assets/Scripts/PlayerMovement.js",
-      "__unresolved_3": "assets/Scripts/TreeManager.js",
-      "__unresolved_0": "assets/Scripts/GameController.js",
-      "__unresolved_2": "assets/Scripts/SoundManager.js"
+      "__unresolved_1": "assets/Scripts/FloatingNumber.js",
+      "__unresolved_2": "assets/Scripts/GameController.js",
+      "__unresolved_0": "assets/Scripts/BackgroundCanvas.js",
+      "__unresolved_7": "assets/Scripts/TreeManager.js",
+      "__unresolved_5": "assets/Scripts/TapToPlay.js",
+      "__unresolved_6": "assets/Scripts/TreeBlock.js",
+      "__unresolved_3": "assets/Scripts/PlayerMovement.js",
+      "__unresolved_4": "assets/Scripts/SoundManager.js"
     },
     "physicalLocation": "cce/internal/x/prerequisite-imports.js",
-    "mTimestamp": 1645435234438,
+    "mTimestamp": 1654026634460,
     "isEntry": true,
     "exposeAs": "cce:/internal/x/prerequisite-imports"
   },
   "quick-pack:/cce/internal/code-quality/cr.js": {
     "imports": {},
     "physicalLocation": "cce/internal/code-quality/cr.js",
-    "mTimestamp": 1645435235539
+    "mTimestamp": 1654026636879
   }
 }

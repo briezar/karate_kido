@@ -13,7 +13,7 @@
   "D:\\Cocos\\Projects\\Karate Chop\\assets\\Tree.prefab": {
     "time": 1644955015914.6506,
     "uuid": "4d1a7c13-5e61-4933-adf7-52d38880c8ac",
-    "missing": false
+    "missing": true
   },
   "D:\\Cocos\\Projects\\Karate Chop\\assets\\TreeWithStick.prefab.meta": {
     "time": 1644508549820.993
@@ -45,7 +45,7 @@
   "D:\\Cocos\\Projects\\Karate Chop\\assets\\branch.png": {
     "time": 1644954589931.4355,
     "uuid": "49cbb50e-74ee-4658-8cb2-53a3d498956c",
-    "missing": false
+    "missing": true
   },
   "D:\\Cocos\\Projects\\Karate Chop\\assets\\texture tree.jpg.meta": {
     "time": 1644954961479.651
@@ -199,28 +199,23 @@
     "uuid": "16e3957d-7efc-4528-8f58-5dc732b71914",
     "missing": false
   },
-  "D:\\Cocos\\Projects\\TreeChopper\\assets\\branch.png": {
-    "time": 1645434627659.1436,
-    "uuid": "49cbb50e-74ee-4658-8cb2-53a3d498956c",
-    "missing": false
-  },
   "D:\\Cocos\\Projects\\TreeChopper\\assets\\Circle.png": {
     "time": 1645434627610.2715,
     "uuid": "0ddcdc99-f659-4a77-a9b4-46f273063316",
     "missing": false
   },
   "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources": {
-    "time": 1645434627665.1255,
+    "time": 1649063623184.161,
     "uuid": "5e4672b2-e4a2-4e71-890b-36b82c15d126",
     "missing": false
   },
   "D:\\Cocos\\Projects\\TreeChopper\\assets\\scene.scene": {
-    "time": 1645434627665.1255,
+    "time": 1649149390133.7688,
     "uuid": "30d67e68-52e9-4fb6-b934-f12d44e13d78",
     "missing": false
   },
   "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts": {
-    "time": 1645434627615.259,
+    "time": 1649148620755.056,
     "uuid": "4f768ce0-d872-4355-abaf-ecff14ee2e91",
     "missing": false
   },
@@ -234,24 +229,9 @@
     "uuid": "08e55cd1-e2cb-4696-bd08-a4fefb243bbb",
     "missing": false
   },
-  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Tree.prefab": {
-    "time": 1645434627654.1545,
-    "uuid": "4d1a7c13-5e61-4933-adf7-52d38880c8ac",
-    "missing": false
-  },
-  "D:\\Cocos\\Projects\\TreeChopper\\assets\\TreeWithStick.prefab": {
-    "time": 1645434627655.152,
-    "uuid": "d9f7f6fa-a80d-40dc-a07c-81be24fda316",
-    "missing": false
-  },
   "D:\\Cocos\\Projects\\TreeChopper\\assets\\White.png": {
     "time": 1645434627656.15,
     "uuid": "0e2ab608-84c2-4ba1-b4ba-0837f9711eae",
-    "missing": false
-  },
-  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\FloatingNumber.prefab": {
-    "time": 1645434627661.1372,
-    "uuid": "a8cc509c-f861-4936-b37c-95cfe0d93742",
     "missing": false
   },
   "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\lumberjackGold_0.png": {
@@ -275,22 +255,22 @@
     "missing": false
   },
   "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts\\GameController.ts": {
-    "time": 1645434627611.2688,
+    "time": 1649147841381.5508,
     "uuid": "c8e9bc6c-d671-4541-a974-5596489e8192",
     "missing": false
   },
   "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts\\PlayerMovement.ts": {
-    "time": 1645434627612.2664,
+    "time": 1649148620746.0803,
     "uuid": "41141885-d440-4cdb-8d58-0260fc12af40",
     "missing": false
   },
   "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts\\SoundManager.ts": {
-    "time": 1645434627614.261,
+    "time": 1649066046238.9731,
     "uuid": "7cad0837-b40e-4bb6-ad24-dfe96be4f004",
     "missing": false
   },
   "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts\\TreeManager.ts": {
-    "time": 1645434627615.259,
+    "time": 1648742492821.83,
     "uuid": "db978525-5539-4d10-9a96-69b941375b02",
     "missing": false
   },
@@ -336,20 +316,8 @@
   "D:\\Cocos\\Projects\\TreeChopper\\assets\\scene.scene.meta": {
     "time": 1645434627666.123
   },
-  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Tree.prefab.meta": {
-    "time": 1645434627654.1545
-  },
-  "D:\\Cocos\\Projects\\TreeChopper\\assets\\TreeWithStick.prefab.meta": {
-    "time": 1645434627655.152
-  },
   "D:\\Cocos\\Projects\\TreeChopper\\assets\\Circle.png.meta": {
     "time": 1645434627610.2715
-  },
-  "D:\\Cocos\\Projects\\TreeChopper\\assets\\branch.png.meta": {
-    "time": 1645434627659.1436
-  },
-  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\FloatingNumber.prefab.meta": {
-    "time": 1645434627661.1372
   },
   "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\lumberjackGold_0.png.meta": {
     "time": 1645434627662.1338
@@ -398,5 +366,693 @@
   },
   "D:\\Cocos\\Projects\\TreeChopper\\assets\\Sound\\PunchSFX.mp3.meta": {
     "time": 1645434627650.1672
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2.meta": {
+    "time": 1648452144564.8308
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x4-right-long.png.meta": {
+    "time": 1648452145057.513
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x4-right-short.png.meta": {
+    "time": 1648452145042.5537
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2": {
+    "time": 1649063617109.486,
+    "uuid": "89673f42-cde2-4fe7-a191-4f0459623fb9",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x4-right-short.png": {
+    "time": 1647869432000,
+    "uuid": "f12bec2d-d87b-4a06-ac28-88ffce2f24b0",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x4-right-long.png": {
+    "time": 1647869432000,
+    "uuid": "b3cd57fd-a372-487c-b9ec-801567025305",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\bar-bot.png.meta": {
+    "time": 1648675878223.202
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\bar-top-01.png.meta": {
+    "time": 1648729554176.9
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\bar-top-02.png.meta": {
+    "time": 1648729546354.6392
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\BG1.png.meta": {
+    "time": 1648452146221.4644
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\button-tap to play-typo.png.meta": {
+    "time": 1648452146368.0713
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\button-tap to play.png.meta": {
+    "time": 1648452146550.5842
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\char-1.png.meta": {
+    "time": 1649091492923.0889
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\char-2.png.meta": {
+    "time": 1649091488363.4512
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\char-hit.png.meta": {
+    "time": 1648668705982.8828
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\ice-01.png.meta": {
+    "time": 1648452146793.932
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\lanterns-01.png.meta": {
+    "time": 1648452146795.9272
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\lanterns-02.png.meta": {
+    "time": 1648452146796.9248
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\left-long.png.meta": {
+    "time": 1648452146801.912
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\left-short-05.png.meta": {
+    "time": 1648452146841.8057
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\right-long.png.meta": {
+    "time": 1648452146845.7932
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\right-short.png.meta": {
+    "time": 1648452146848.7866
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\tree.png.meta": {
+    "time": 1648456427794.575
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\typo.meta": {
+    "time": 1648452146802.9084
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x2-01.png.meta": {
+    "time": 1648461562577.1123
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x2-left-long.png.meta": {
+    "time": 1648452146949.517
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x2-left-short.png.meta": {
+    "time": 1648452146913.6123
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x2-right-long.png.meta": {
+    "time": 1648452146947.5215
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x2-right-short.png.meta": {
+    "time": 1648452146983.4255
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x3-01.png.meta": {
+    "time": 1648461373967.2336
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x3-02.png.meta": {
+    "time": 1648461373960.252
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x3-03.png.meta": {
+    "time": 1648461562583.0957
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x3-left-long.png.meta": {
+    "time": 1648452147032.296
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x3-left-short.png.meta": {
+    "time": 1648452147047.2554
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x3-right-long.png.meta": {
+    "time": 1648452147054.236
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x3-right-short.png.meta": {
+    "time": 1648452147073.1853
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x4-01.png.meta": {
+    "time": 1648461562575.1172
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x4-02.png.meta": {
+    "time": 1648461562621.9917
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x4-03.png.meta": {
+    "time": 1648461562599.0532
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x4-04.png.meta": {
+    "time": 1648461562619
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x4-left-long.png.meta": {
+    "time": 1648452147144.9937
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x4-left-short.png.meta": {
+    "time": 1648452147157.959
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\bar-top-01.png": {
+    "time": 1648039130000,
+    "uuid": "44f63edc-49fe-40dc-82ed-10277fc0bcdd",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\bar-top-02.png": {
+    "time": 1648039058000,
+    "uuid": "56e3a575-ef3d-496a-9710-91b922fbd12e",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\bar-bot.png": {
+    "time": 1648039058000,
+    "uuid": "7ce83987-c93c-4e91-bd02-43e442767c14",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\BG1.png": {
+    "time": 1647866360000,
+    "uuid": "9c5150ef-8318-470c-b867-9b0cdba7a067",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\button-tap to play-typo.png": {
+    "time": 1648039444000,
+    "uuid": "43b396de-e1ae-4ba7-8267-4339f66608db",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\char-1.png": {
+    "time": 1647887968000,
+    "uuid": "fef96b84-ffb4-464b-b116-357e27c954cf",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\button-tap to play.png": {
+    "time": 1648039426000,
+    "uuid": "2e5bc885-4ee0-4bda-95f9-842978b58575",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\char-2.png": {
+    "time": 1647887982000,
+    "uuid": "422e1d7c-c4ff-47e0-805b-bf22c3f2ebdc",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\char-hit.png": {
+    "time": 1647885078000,
+    "uuid": "f03893c7-32a8-467e-bf8b-f9b913db3cd3",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\ice-01.png": {
+    "time": 1647949678000,
+    "uuid": "04491b85-1948-4064-8911-7402a2e0aef0",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\lanterns-01.png": {
+    "time": 1647949812000,
+    "uuid": "ec00c4c4-260c-4852-b1f1-aca95f2cfa94",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\lanterns-02.png": {
+    "time": 1647949858000,
+    "uuid": "5ea36337-9bd7-493f-8caf-8d83d7cbd293",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\left-long.png": {
+    "time": 1647869432000,
+    "uuid": "dfb23d07-c951-49bc-9be9-6028a0850a28",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\typo": {
+    "time": 1649101045690.2693,
+    "uuid": "dc0e6d49-0bc5-4723-9073-63915af73c0b",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\left-short-05.png": {
+    "time": 1647869748000,
+    "uuid": "f85ab8ab-c80f-4902-8b6e-2ede43e63547",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\right-long.png": {
+    "time": 1647869432000,
+    "uuid": "5e6f078c-fd44-43cf-bd73-475c7fde8734",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\right-short.png": {
+    "time": 1647869432000,
+    "uuid": "b0115376-ae77-446a-8ff2-f5bf7d1e735e",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x2-01.png": {
+    "time": 1648461485327.3413,
+    "uuid": "377034eb-1a8a-4c28-9a89-a640f02a349f",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\tree.png": {
+    "time": 1647866194000,
+    "uuid": "ed1b0883-16bc-45b6-8fee-20994cdba4b8",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x2-left-short.png": {
+    "time": 1647869432000,
+    "uuid": "9c6a3872-d6cb-4f91-96d2-437eb773ca96",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x2-right-long.png": {
+    "time": 1647869432000,
+    "uuid": "adf31bc4-d89a-4227-bdae-602d0761404f",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x2-left-long.png": {
+    "time": 1647869432000,
+    "uuid": "96eadc62-b9b2-41e0-b11b-a8007ea413e4",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x2-right-short.png": {
+    "time": 1647869432000,
+    "uuid": "0a04d96b-a749-4c00-8854-5061369a94eb",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x3-02.png": {
+    "time": 1648461347305.2075,
+    "uuid": "5e45c10d-83b2-44c1-a598-29ecae1a5b28",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x3-01.png": {
+    "time": 1648461364259.1985,
+    "uuid": "9cf9700c-92df-4333-a623-9e852e9d5a00",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x3-left-long.png": {
+    "time": 1647869432000,
+    "uuid": "de524020-2fd2-4c8d-b9f7-10ab0f3b5471",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x3-03.png": {
+    "time": 1648461403044.4927,
+    "uuid": "bd4418a3-9819-4ead-919d-aa99bc157c8e",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x3-left-short.png": {
+    "time": 1647869432000,
+    "uuid": "e42db199-897f-432e-a8be-0b80d1f93a38",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x3-right-long.png": {
+    "time": 1647869432000,
+    "uuid": "76ff582c-c68c-43b6-9ffc-ee89fb6199aa",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x3-right-short.png": {
+    "time": 1647869432000,
+    "uuid": "a77a6902-b589-449b-bdf0-91a7f4c5e6ea",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x4-01.png": {
+    "time": 1648461451585.4688,
+    "uuid": "573a5cc3-b1d3-405d-9a98-17573cb13c1b",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x4-02.png": {
+    "time": 1648461435828.5132,
+    "uuid": "5ede7c2b-ccb8-4a8f-9b8b-2f7fb3a66039",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x4-03.png": {
+    "time": 1648461429417.9482,
+    "uuid": "08c30247-c80f-4afe-8461-4956f4202b18",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x4-left-long.png": {
+    "time": 1647869432000,
+    "uuid": "a143107d-eb7f-413b-a363-dd62359e80ee",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x4-04.png": {
+    "time": 1648461445580.6985,
+    "uuid": "9dc76283-17f1-4d83-b4ee-9fdce48b1aa7",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x4-left-short.png": {
+    "time": 1647869432000,
+    "uuid": "70168b49-19fa-43a4-a193-68db24696d71",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Prefabs.meta": {
+    "time": 1648452406493.5254
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Prefabs": {
+    "time": 1649063911966.985,
+    "uuid": "8379d282-9cde-4017-b5a6-8d051979a72c",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\FloatingNumber.prefab.meta": {
+    "time": 1645434627661.1372
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\FloatingNumber.prefab": {
+    "time": 1649148526446.0283,
+    "uuid": "a8cc509c-f861-4936-b37c-95cfe0d93742",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts\\TreeBlock.ts.meta": {
+    "time": 1648453218731.875
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts\\TreeBlock.ts": {
+    "time": 1648735229158.848,
+    "uuid": "f641ee63-310d-4d80-99e4-f10304959126",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\tree-block.png.meta": {
+    "time": 1648457422627.3142
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\tree-block.png": {
+    "time": 1648457372296.9258,
+    "uuid": "feb0302c-41e6-4e39-9166-ffb80bcd365f",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x2-02.png.meta": {
+    "time": 1648461629853.4546
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\x2-02.png": {
+    "time": 1648461472433.3977,
+    "uuid": "7d83cf61-0b4c-4ae6-b0b0-6775e6b0e76d",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Prefabs\\TreeBlock.prefab.meta": {
+    "time": 1648569073185.0645
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Prefabs\\TreeBlock.prefab": {
+    "time": 1649061758647.9365,
+    "uuid": "d9f7f6fa-a80d-40dc-a07c-81be24fda316",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\char-1.png.meta": {
+    "time": 1648671330098.4768
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\char-1.png": {
+    "time": 1647887968000,
+    "uuid": "ab759f01-5087-45fb-b2ba-6e2b24da7b36",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\char-hit.png.meta": {
+    "time": 1648671330093.4883
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\char-hit.png": {
+    "time": 1647885078000,
+    "uuid": "cbdee25f-2cf7-4d7d-a4da-62ecafed67d5",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts\\TapToPlay.ts.meta": {
+    "time": 1648720274390.8083
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts\\TapToPlay.ts": {
+    "time": 1649146823433.802,
+    "uuid": "fa71e740-242a-4a18-b0fa-c6b4b4f151d6",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\char-fall-1.png.meta": {
+    "time": 1648722627918.6338
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\char-fall-1.png": {
+    "time": 1647883300000,
+    "uuid": "5d4fc668-ed48-432a-9423-bfe95d4d7866",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\char-fall-2.png.meta": {
+    "time": 1648722627923.6206
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\char-fall-2.png": {
+    "time": 1647883612000,
+    "uuid": "93ea2aa9-76ec-46f6-be26-8b335700211e",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\char-fall-3.png.meta": {
+    "time": 1648722627930.7854
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\char-fall-3.png": {
+    "time": 1647891892000,
+    "uuid": "aae4a5c4-82cd-455f-8cca-d4c68710b627",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\typo\\Nunito-Regular.ttf.meta": {
+    "time": 1644382948000
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\typo\\Nunito-Regular.ttf": {
+    "time": 1636452778000,
+    "uuid": "7da31f9c-debc-4ec9-881b-d9e9b175b180",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts\\BackgroundCanvas.ts.meta": {
+    "time": 1648744315584.2551
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts\\BackgroundCanvas.ts": {
+    "time": 1649100282757.0264,
+    "uuid": "eeca7330-c2f4-458f-9a19-204e964ac202",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds.meta": {
+    "time": 1648801465433.3384
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds": {
+    "time": 1649058974091.5933,
+    "uuid": "893d4ca1-6429-4dc5-abc3-c70a0067036e",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\BG6.png.meta": {
+    "time": 1648809039085.8616
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\BG6.png": {
+    "time": 1647866674000,
+    "uuid": "e173a1e4-efec-4604-a159-2483203a642d",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\BG5.png.meta": {
+    "time": 1648809042301.3599
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\BG5.png": {
+    "time": 1647866610000,
+    "uuid": "d9fb1498-cf89-4f1a-b19f-9fd02b67533d",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\BG4.png.meta": {
+    "time": 1648809045370.5437
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\BG4.png": {
+    "time": 1647866540000,
+    "uuid": "381ef6b2-e5dd-4ce7-99e1-999eb63c9873",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\BG3.png.meta": {
+    "time": 1648809048839.5808
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\BG3.png": {
+    "time": 1647866434000,
+    "uuid": "f0c62e39-d5de-436a-93ef-d486dbd067cc",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\BG2.png.meta": {
+    "time": 1648809053347.142
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\BG2.png": {
+    "time": 1647866282000,
+    "uuid": "b6660530-528b-42e4-8ecb-7dea011d48a5",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG1-2.png.meta": {
+    "time": 1649059915870.0625
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG1-1.png.meta": {
+    "time": 1649059919915.8235
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG2-1.png.meta": {
+    "time": 1649058974332.9224
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG1-3.png.meta": {
+    "time": 1649059930998.8042
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG2-2.png.meta": {
+    "time": 1649058974361.8462
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG2-3.png.meta": {
+    "time": 1649058974376.8057
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG3-2.png.meta": {
+    "time": 1649058974407.7224
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG4-2.png.meta": {
+    "time": 1649058974446.764
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG3-3.png.meta": {
+    "time": 1649058974458.7324
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG3-1.png.meta": {
+    "time": 1649058974488.7476
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG4-3.png.meta": {
+    "time": 1649058974499.7175
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG5-3.png.meta": {
+    "time": 1649058974516.6716
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG4-1.png.meta": {
+    "time": 1649058974532.6284
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG5-2.png.meta": {
+    "time": 1649058974546.5923
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG5-1.png.meta": {
+    "time": 1649058974557.5618
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG6-3.png.meta": {
+    "time": 1649058974576.5105
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG6-2.png.meta": {
+    "time": 1649058974593.4656
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG6-1.png.meta": {
+    "time": 1649058974607.429
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG1-2.png": {
+    "time": 1649046488518.7358,
+    "uuid": "aba4d67c-9595-4ae7-82ac-c9e70ff0aa72",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG1-1.png": {
+    "time": 1649046488516.741,
+    "uuid": "933a3d04-e14a-42d5-ba23-1688c35aea80",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG2-1.png": {
+    "time": 1649046776501.1426,
+    "uuid": "e45a0341-b487-40cc-b59a-73be9c89746c",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG1-3.png": {
+    "time": 1649046488519.7344,
+    "uuid": "6731574b-f73c-4b1b-b9b3-a28362ad117f",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG2-2.png": {
+    "time": 1649046776503.1143,
+    "uuid": "b909babf-b835-4bd3-b8d3-e65c6fb53b27",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG2-3.png": {
+    "time": 1649046776504.1099,
+    "uuid": "cc6e039a-334c-4961-84d6-9b7d9833f987",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG3-2.png": {
+    "time": 1649046127974.7634,
+    "uuid": "448cad68-fc71-4cff-902e-3107f24cce4f",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG4-2.png": {
+    "time": 1649045974640.8018,
+    "uuid": "f48c68cd-bb01-4764-aee6-ce4ea92d7e19",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG3-3.png": {
+    "time": 1649046127975.729,
+    "uuid": "5107937b-b53c-4110-9869-1ec36ecb9f53",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG3-1.png": {
+    "time": 1649046127972.7366,
+    "uuid": "9c3b6a47-855c-49c3-b4f4-779c137c4d65",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG4-3.png": {
+    "time": 1649045974642.7957,
+    "uuid": "d5e4098b-d30c-45ba-9bef-745c15c12d67",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG5-3.png": {
+    "time": 1649046488506.795,
+    "uuid": "815e1a60-190e-4d75-b2f6-83d0590f09d5",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG4-1.png": {
+    "time": 1649045974638.807,
+    "uuid": "fd1318bd-8a80-42d0-b738-f320c2181f19",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG5-2.png": {
+    "time": 1649046488504.7742,
+    "uuid": "e7f9186e-9f4a-4b2c-89b5-9bed8c53431c",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG5-1.png": {
+    "time": 1649046488502.7783,
+    "uuid": "79a27938-9879-467e-8415-4677ec03e95d",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG6-3.png": {
+    "time": 1649046488512.7524,
+    "uuid": "030fcaf3-4129-47bb-b7c4-e13978a40a70",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG6-2.png": {
+    "time": 1649046488511.7544,
+    "uuid": "acc6baf4-e783-4eb8-8f53-6caa7393dbb0",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\Clouds\\cloud-BG6-1.png": {
+    "time": 1649046488508.764,
+    "uuid": "8d5403ef-ba8d-4855-9bd9-685414f62fca",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\typo\\BlahBlahUCiCiel-Regular.ttf.meta": {
+    "time": 1649061833049.2573
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\typo\\CCDaveGibbonsJournal-Regular.ttf.meta": {
+    "time": 1649061833065.2136
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\typo\\BlahBlahUCiCiel-Regular.ttf": {
+    "time": 1641767292000,
+    "uuid": "6227d5df-4694-4971-b393-d01e4c677d89",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\typo\\CCDaveGibbonsJournal-Regular.ttf": {
+    "time": 1537278252000,
+    "uuid": "c14dcaf5-6a57-41ef-9261-589e6d979c4b",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\typo\\icon_shuffle.png.meta": {
+    "time": 1649062847335.3125
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\typo\\icon_shuffle.png": {
+    "time": 1646365933000,
+    "uuid": "d34518d6-d37c-4b52-8527-c303298fb9db",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\char-kick-1.png.meta": {
+    "time": 1649063259858.992
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\char-kick-2.png.meta": {
+    "time": 1649063259879.935
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\char-kick-1.png": {
+    "time": 1649009750000,
+    "uuid": "257bf9e0-5702-4551-806b-129da8c0d9be",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\char-kick-2.png": {
+    "time": 1649009918000,
+    "uuid": "118036f7-95f5-49b0-80bc-b2bed4602bcd",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\char-kick.png.meta": {
+    "time": 1649063778649.275
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\resources\\char-kick.png": {
+    "time": 1649009918000,
+    "uuid": "936f93cc-701a-4918-9c75-e1f7fa94ca35",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Prefabs\\Canvas.prefab.meta": {
+    "time": 1649063911974.9624
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Prefabs\\Canvas.prefab": {
+    "time": 1649143438467.7205,
+    "uuid": "77050bb8-fa9b-4080-b7be-04a51299d3ad",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\typo\\Board.png.meta": {
+    "time": 1649101045826.1216
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Karate Kido 2\\typo\\Board.png": {
+    "time": 1646365933000,
+    "uuid": "5174b591-3f68-42d7-a392-2979736d8b84",
+    "missing": false
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts\\FloatingNumber.ts.meta": {
+    "time": 1649147225131.231
+  },
+  "D:\\Cocos\\Projects\\TreeChopper\\assets\\Scripts\\FloatingNumber.ts": {
+    "time": 1649148563086.1128,
+    "uuid": "0d0fec14-5c7c-4e43-9da0-7b6ec9fb7393",
+    "missing": false
   }
 }

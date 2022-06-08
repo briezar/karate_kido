@@ -1,7 +1,7 @@
 System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Component, systemEvent, SystemEventType, KeyCode, resources, SpriteFrame, Sprite, RigidBody2D, Vec2, randomRange, sys, GameController, SoundManager, TreeManager, _dec, _dec2, _class, _class2, _descriptor, _temp, _crd, ccclass, property, PlayerMovement;
+  var _reporterNs, _cclegacy, _decorator, Component, systemEvent, SystemEventType, KeyCode, resources, SpriteFrame, Sprite, RigidBody2D, Vec2, randomRange, sys, randomRangeInt, GameController, SoundManager, TreeManager, _dec, _dec2, _dec3, _dec4, _class, _class2, _descriptor, _descriptor2, _descriptor3, _temp, _crd, ccclass, property, PlayerMovement;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -40,6 +40,7 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
       Vec2 = _cc.Vec2;
       randomRange = _cc.randomRange;
       sys = _cc.sys;
+      randomRangeInt = _cc.randomRangeInt;
     }, function (_unresolved_2) {
       GameController = _unresolved_2.GameController;
     }, function (_unresolved_3) {
@@ -72,6 +73,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         type: _crd && TreeManager === void 0 ? (_reportPossibleCrUseOfTreeManager({
           error: Error()
         }), TreeManager) : TreeManager
+      }), _dec3 = property({
+        type: SpriteFrame
+      }), _dec4 = property({
+        type: SpriteFrame
       }), _dec(_class = (_class2 = (_temp = class PlayerMovement extends Component {
         constructor() {
           super(...arguments);
@@ -80,9 +85,15 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
           _defineProperty(this, "distanceFromTree", void 0);
 
-          _defineProperty(this, "axeLevel", 0);
+          _defineProperty(this, "beltLevel", 0);
 
-          _defineProperty(this, "spriteDirectory", [["lumberjackSilver_0/spriteFrame", "lumberjackSilver_1/spriteFrame"], ["lumberjackGold_0/spriteFrame", "lumberjackGold_1/spriteFrame"]]);
+          _defineProperty(this, "spriteDirectory", [["char-1/spriteFrame", "char-hit/spriteFrame", "char-kick/spriteFrame"], ["char-1/spriteFrame", "char-hit/spriteFrame", "char-kick/spriteFrame"]]);
+
+          _initializerDefineProperty(this, "idleAnimSpFr", _descriptor2, this);
+
+          _defineProperty(this, "idleAnimFrame", 0);
+
+          _initializerDefineProperty(this, "deathAnimSpFr", _descriptor3, this);
 
           _defineProperty(this, "spriteArray", []);
 
@@ -99,16 +110,20 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           this.treeManager.playerMovement = this;
 
           if (parseInt(sys.localStorage.getItem('bestScore')) > 1000) {
-            this.axeLevel++;
+            this.beltLevel++;
           }
 
-          resources.load(this.spriteDirectory[this.axeLevel][0], SpriteFrame, (err, spriteFrame) => {
+          resources.load(this.spriteDirectory[this.beltLevel][0], SpriteFrame, (err, spriteFrame) => {
             this.spriteArray.push(spriteFrame);
             this.sprite.spriteFrame = spriteFrame;
           });
-          resources.load(this.spriteDirectory[this.axeLevel][1], SpriteFrame, (err, spriteFrame) => {
+          resources.load(this.spriteDirectory[this.beltLevel][1], SpriteFrame, (err, spriteFrame) => {
             this.spriteArray.push(spriteFrame);
           });
+          resources.load(this.spriteDirectory[this.beltLevel][2], SpriteFrame, (err, spriteFrame) => {
+            this.spriteArray.push(spriteFrame);
+          });
+          this.schedule(this.playIdleAnimation, 0.4, Infinity);
         }
 
         onKeyDown(event) {
@@ -133,27 +148,31 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
 
         chopRight() {
           this.node.setScale(1, 1, 1);
-          this.node.setPosition(this.distanceFromTree, this.node.position.y, 0);
-          this.treeManager.chopTree();
+          this.node.setPosition(this.distanceFromTree, this.node.position.y);
           this.playChopAnimation();
+          this.treeManager.chopTree();
         }
 
         chopLeft() {
           this.node.setScale(-1, 1, 1);
-          this.node.setPosition(-this.distanceFromTree, this.node.position.y, 0);
-          this.treeManager.chopTree();
+          this.node.setPosition(-this.distanceFromTree, this.node.position.y);
           this.playChopAnimation();
+          this.treeManager.chopTree();
         }
 
         knockDown() {
+          this.unschedule(this.stopChopAnimation);
           this.scheduleOnce(() => {
-            this.rigidBody2D.linearVelocity = new Vec2(0, -20);
             (_crd && SoundManager === void 0 ? (_reportPossibleCrUseOfSoundManager({
               error: Error()
             }), SoundManager) : SoundManager).Instance.playSound((_crd && SoundManager === void 0 ? (_reportPossibleCrUseOfSoundManager({
               error: Error()
             }), SoundManager) : SoundManager).Instance.bonkSound);
           }, 0.1);
+          this.schedule(() => {
+            var deathSprite = this.deathAnimSpFr.shift();
+            this.sprite.spriteFrame = deathSprite;
+          }, 0.15, 2, 0.1);
         }
 
         knockAway() {
@@ -162,21 +181,32 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
           }), SoundManager) : SoundManager).Instance.playSound((_crd && SoundManager === void 0 ? (_reportPossibleCrUseOfSoundManager({
             error: Error()
           }), SoundManager) : SoundManager).Instance.punchSound);
-          this.rigidBody2D.angularVelocity = this.node.scale.x * 60;
-          this.rigidBody2D.linearVelocity = new Vec2(this.node.scale.x * 40, randomRange(15, 20));
+          this.rigidBody2D.angularVelocity = this.node.scale.x * -10;
+          this.rigidBody2D.linearVelocity = new Vec2(this.node.scale.x * 70, randomRange(15, 20));
         }
 
         playChopAnimation() {
           this.unschedule(this.stopChopAnimation);
           this.sprite.spriteFrame = this.spriteArray[0];
           this.scheduleOnce(() => {
-            this.sprite.spriteFrame = this.spriteArray[1];
+            this.sprite.spriteFrame = this.spriteArray[randomRangeInt(1, this.spriteArray.length)];
           }, 0.05);
           this.scheduleOnce(this.stopChopAnimation, 0.2);
         }
 
         stopChopAnimation() {
           this.sprite.spriteFrame = this.spriteArray[0];
+        }
+
+        playIdleAnimation() {
+          var index = Math.min(this.idleAnimSpFr.length - 1, this.idleAnimFrame);
+          this.sprite.spriteFrame = this.idleAnimSpFr[index];
+          this.idleAnimFrame++;
+          this.idleAnimFrame %= 4;
+        }
+
+        unschedulePlayIdleAnim() {
+          this.unschedule(this.playIdleAnimation);
         } //update (deltaTime: number) {
         //}
 
@@ -186,6 +216,20 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__
         enumerable: true,
         writable: true,
         initializer: null
+      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "idleAnimSpFr", [_dec3], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return [];
+        }
+      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "deathAnimSpFr", [_dec4], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function initializer() {
+          return [];
+        }
       })), _class2)) || _class));
       /**
        * [1] Class member could be defined like this.

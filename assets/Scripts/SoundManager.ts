@@ -30,8 +30,6 @@ export class SoundManager extends Component {
     public punchSound: AudioClip;
 
     onLoad() {
-        game.addPersistRootNode(this.node);
-
         SoundManager.Instance = this;
         this.audioSource = this.getComponent(AudioSource);
     }

@@ -30,12 +30,14 @@
     },
     "./mods/fs/0/assets/Scripts/GameController.js": {
       "cc": "./mods/cce/internal/x/cc.js",
-      "__unresolved_1": "./mods/fs/0/assets/Scripts/PlayerMovement.js",
+      "__unresolved_1": "./mods/fs/0/assets/Scripts/FloatingNumber.js",
+      "__unresolved_2": "./mods/fs/0/assets/Scripts/PlayerMovement.js",
       "__unresolved_0": "./mods/cce/internal/code-quality/cr.js"
     },
     "./mods/fs/0/assets/Scripts/TreeManager.js": {
       "cc": "./mods/cce/internal/x/cc.js",
       "__unresolved_1": "./mods/fs/0/assets/Scripts/GameController.js",
+      "__unresolved_3": "./mods/fs/0/assets/Scripts/TreeBlock.js",
       "__unresolved_2": "./mods/fs/0/assets/Scripts/SoundManager.js",
       "__unresolved_0": "./mods/cce/internal/code-quality/cr.js"
     },
@@ -44,12 +46,27 @@
     },
     "./mods/fs/0/assets/Scripts/PlayerMovement.js": {
       "cc": "./mods/cce/internal/x/cc.js",
-      "__unresolved_3": "./mods/fs/0/assets/Scripts/TreeManager.js",
       "__unresolved_1": "./mods/fs/0/assets/Scripts/GameController.js",
+      "__unresolved_3": "./mods/fs/0/assets/Scripts/TreeManager.js",
       "__unresolved_2": "./mods/fs/0/assets/Scripts/SoundManager.js",
       "__unresolved_0": "./mods/cce/internal/code-quality/cr.js"
     },
     "./mods/fs/0/assets/Scripts/BgmPersist.js": {
+      "cc": "./mods/cce/internal/x/cc.js"
+    },
+    "./mods/fs/0/assets/Scripts/TreeBlock.js": {
+      "cc": "./mods/cce/internal/x/cc.js",
+      "__unresolved_0": "./mods/cce/internal/code-quality/cr.js"
+    },
+    "./mods/fs/0/assets/Scripts/TapToPlay.js": {
+      "cc": "./mods/cce/internal/x/cc.js",
+      "__unresolved_1": "./mods/fs/0/assets/Scripts/GameController.js",
+      "__unresolved_0": "./mods/cce/internal/code-quality/cr.js"
+    },
+    "./mods/fs/0/assets/Scripts/BackgroundCanvas.js": {
+      "cc": "./mods/cce/internal/x/cc.js"
+    },
+    "./mods/fs/0/assets/Scripts/FloatingNumber.js": {
       "cc": "./mods/cce/internal/x/cc.js"
     },
     "./mods/cce/internal/x/cc.js": {
@@ -76,10 +93,14 @@
       "__unresolved_20": "cce:/internal/x/cc-fu/dragon-bones"
     },
     "./mods/cce/internal/x/prerequisite-imports.js": {
-      "__unresolved_1": "./mods/fs/0/assets/Scripts/PlayerMovement.js",
-      "__unresolved_3": "./mods/fs/0/assets/Scripts/TreeManager.js",
-      "__unresolved_0": "./mods/fs/0/assets/Scripts/GameController.js",
-      "__unresolved_2": "./mods/fs/0/assets/Scripts/SoundManager.js"
+      "__unresolved_1": "./mods/fs/0/assets/Scripts/FloatingNumber.js",
+      "__unresolved_2": "./mods/fs/0/assets/Scripts/GameController.js",
+      "__unresolved_0": "./mods/fs/0/assets/Scripts/BackgroundCanvas.js",
+      "__unresolved_7": "./mods/fs/0/assets/Scripts/TreeManager.js",
+      "__unresolved_5": "./mods/fs/0/assets/Scripts/TapToPlay.js",
+      "__unresolved_6": "./mods/fs/0/assets/Scripts/TreeBlock.js",
+      "__unresolved_3": "./mods/fs/0/assets/Scripts/PlayerMovement.js",
+      "__unresolved_4": "./mods/fs/0/assets/Scripts/SoundManager.js"
     }
   }
 }

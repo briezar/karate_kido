@@ -1,7 +1,7 @@
-System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], function (_export, _context) {
+System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2", "__unresolved_3"], function (_export, _context) {
   "use strict";
 
-  var _reporterNs, _cclegacy, _decorator, Component, Prefab, instantiate, RigidBody2D, Vec2, UITransform, GameController, SoundManager, _dec, _dec2, _dec3, _class, _class2, _descriptor, _descriptor2, _temp, _crd, ccclass, property, TreeType, TreeManager;
+  var _reporterNs, _cclegacy, _decorator, Component, Prefab, instantiate, Vec3, UITransform, tween, SpriteFrame, GameController, SoundManager, TreeBlock, _dec, _dec2, _dec3, _dec4, _dec5, _dec6, _dec7, _dec8, _dec9, _class, _class2, _descriptor, _descriptor2, _descriptor3, _descriptor4, _descriptor5, _descriptor6, _descriptor7, _descriptor8, _temp, _crd, ccclass, property, TreeManager;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -23,6 +23,10 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
     _reporterNs.report("SoundManager", "./SoundManager", _context.meta, extras);
   }
 
+  function _reportPossibleCrUseOfTreeBlock(extras) {
+    _reporterNs.report("TreeBlock", "./TreeBlock", _context.meta, extras);
+  }
+
   return {
     setters: [function (_unresolved_) {
       _reporterNs = _unresolved_;
@@ -32,13 +36,16 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
       Component = _cc.Component;
       Prefab = _cc.Prefab;
       instantiate = _cc.instantiate;
-      RigidBody2D = _cc.RigidBody2D;
-      Vec2 = _cc.Vec2;
+      Vec3 = _cc.Vec3;
       UITransform = _cc.UITransform;
+      tween = _cc.tween;
+      SpriteFrame = _cc.SpriteFrame;
     }, function (_unresolved_2) {
       GameController = _unresolved_2.GameController;
     }, function (_unresolved_3) {
       SoundManager = _unresolved_3.SoundManager;
+    }, function (_unresolved_4) {
+      TreeBlock = _unresolved_4.TreeBlock;
     }],
     execute: function () {
       _crd = true;
@@ -61,22 +68,41 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
        *
        */
 
-      (function (TreeType) {
-        TreeType[TreeType["Tree"] = 0] = "Tree";
-        TreeType[TreeType["TreeWithStick"] = 1] = "TreeWithStick";
-      })(TreeType || (TreeType = {}));
-
       _export("TreeManager", TreeManager = (_dec = ccclass('TreeManager'), _dec2 = property({
         type: Prefab
       }), _dec3 = property({
-        type: Prefab
+        type: SpriteFrame
+      }), _dec4 = property({
+        type: SpriteFrame
+      }), _dec5 = property({
+        type: SpriteFrame
+      }), _dec6 = property({
+        type: SpriteFrame
+      }), _dec7 = property({
+        type: SpriteFrame
+      }), _dec8 = property({
+        type: SpriteFrame
+      }), _dec9 = property({
+        type: SpriteFrame
       }), _dec(_class = (_class2 = (_temp = class TreeManager extends Component {
         constructor(...args) {
           super(...args);
 
-          _initializerDefineProperty(this, "treePrefab", _descriptor, this);
+          _initializerDefineProperty(this, "treeBlockPrefab", _descriptor, this);
 
-          _initializerDefineProperty(this, "treeWithStickPrefab", _descriptor2, this);
+          _initializerDefineProperty(this, "hitStates2x", _descriptor2, this);
+
+          _initializerDefineProperty(this, "hitStates3x", _descriptor3, this);
+
+          _initializerDefineProperty(this, "hitStates4x", _descriptor4, this);
+
+          _initializerDefineProperty(this, "stick2x", _descriptor5, this);
+
+          _initializerDefineProperty(this, "stick3x", _descriptor6, this);
+
+          _initializerDefineProperty(this, "stick4x", _descriptor7, this);
+
+          _initializerDefineProperty(this, "lantern", _descriptor8, this);
 
           _defineProperty(this, "playerMovement", void 0);
 
@@ -86,13 +112,15 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
           _defineProperty(this, "dropSpeed", 1000);
 
-          _defineProperty(this, "pool_Tree", []);
-
-          _defineProperty(this, "pool_TreeWithStick", []);
-
           _defineProperty(this, "lastPosition", -1);
 
           _defineProperty(this, "timeSinceLastChop", 0);
+
+          _defineProperty(this, "treeCounter", 0);
+
+          _defineProperty(this, "noStickCounter", 0);
+
+          _defineProperty(this, "isLastBlockNot1x", false);
         }
 
         onLoad() {
@@ -101,27 +129,27 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
 
         update(deltaTime) {
           //Move to position when chop fast
-          if (this.treeArray[0].position.y > this.treeHeight) {
-            this.treeArray[0].setPosition(0, this.treeHeight, 0);
+          if (this.treeArray[0].node.position.y > this.treeHeight) {
+            this.treeArray[0].node.setPosition(0, this.treeHeight, 0);
           } //Move first block
 
 
-          if (this.treeArray[0].position.y > 0.01) {
-            this.treeArray[0].setPosition(0, this.treeArray[0].position.y - this.dropSpeed * deltaTime, 0);
-          } else if (this.treeArray[0].position.y < 0.01) {
-            this.treeArray[0].setPosition(0, 0, 0);
+          if (this.treeArray[0].node.position.y > 0.01) {
+            this.treeArray[0].node.setPosition(0, this.treeArray[0].node.position.y - this.dropSpeed * deltaTime, 0);
+          } else if (this.treeArray[0].node.position.y < 0.01) {
+            this.treeArray[0].node.setPosition(0, 0, 0);
           } //Next block sticks to previous block
 
 
           for (var i = 1; i < this.treeArray.length; i++) {
-            this.treeArray[i].setPosition(0, this.treeArray[i - 1].position.y + this.treeHeight, 0);
+            this.treeArray[i].node.setPosition(0, this.treeArray[i - 1].node.position.y + this.treeHeight, 0);
           }
 
           this.timeSinceLastChop += deltaTime;
         }
 
         chopTree() {
-          if (this.playerMovement.node.scale.x == this.treeArray[0].scale.x && this.treeArray[0].name == "TreeWithStick") {
+          if (this.playerMovement.node.scale.x == this.treeArray[0].getStickSide()) {
             this.playerMovement.knockAway();
             (_crd && GameController === void 0 ? (_reportPossibleCrUseOfGameController({
               error: Error()
@@ -129,22 +157,18 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
             return;
           }
 
+          (_crd && GameController === void 0 ? (_reportPossibleCrUseOfGameController({
+            error: Error()
+          }), GameController) : GameController).Instance.increaseMultiplier(0.15);
           let score = 10;
           (_crd && SoundManager === void 0 ? (_reportPossibleCrUseOfSoundManager({
             error: Error()
           }), SoundManager) : SoundManager).Instance.playWoodChopSound();
           (_crd && GameController === void 0 ? (_reportPossibleCrUseOfGameController({
             error: Error()
-          }), GameController) : GameController).Instance.timer += 0.5;
-          if ((_crd && GameController === void 0 ? (_reportPossibleCrUseOfGameController({
+          }), GameController) : GameController).Instance.addTimerTime(0.5 / (_crd && GameController === void 0 ? (_reportPossibleCrUseOfGameController({
             error: Error()
-          }), GameController) : GameController).Instance.timer > (_crd && GameController === void 0 ? (_reportPossibleCrUseOfGameController({
-            error: Error()
-          }), GameController) : GameController).Instance.maxTime) (_crd && GameController === void 0 ? (_reportPossibleCrUseOfGameController({
-            error: Error()
-          }), GameController) : GameController).Instance.timer = (_crd && GameController === void 0 ? (_reportPossibleCrUseOfGameController({
-            error: Error()
-          }), GameController) : GameController).Instance.maxTime;
+          }), GameController) : GameController).Instance.difficultyScale);
           let position = this.playerMovement.node.scale.x;
 
           if (position != this.lastPosition) {
@@ -159,17 +183,28 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           (_crd && GameController === void 0 ? (_reportPossibleCrUseOfGameController({
             error: Error()
           }), GameController) : GameController).Instance.addScore(score);
+          this.checkForBuff(this.treeArray[1]);
+
+          if (!this.treeArray[0].isChopped()) {
+            return;
+          }
+
           var choppedTree = this.treeArray.shift();
-          choppedTree.getComponent(RigidBody2D).linearVelocity = new Vec2(this.playerMovement.node.scale.x * -100, 0);
-          this.scheduleOnce(() => {
-            choppedTree.getComponent(RigidBody2D).linearVelocity = Vec2.ZERO;
-            choppedTree.active = false;
-          }, 1);
-          this.addRandomTree();
+          tween(choppedTree.node).by(0.5, {
+            position: new Vec3(this.playerMovement.node.scale.x * -300, 0)
+          }, {
+            onUpdate: () => {
+              choppedTree.uiOpacity.opacity -= 10;
+            },
+            easing: 'quartOut'
+          }).call(() => {
+            choppedTree.reset();
+          }).start();
+          this.checkForBuff(this.treeArray[1]);
           this.lastPosition = this.playerMovement.node.scale.x;
           this.timeSinceLastChop = 0;
 
-          if (this.playerMovement.node.scale.x == this.treeArray[0].scale.x && this.treeArray[0].name == "TreeWithStick") {
+          if (this.playerMovement.node.scale.x == this.treeArray[0].getStickSide()) {
             this.playerMovement.knockDown();
             (_crd && GameController === void 0 ? (_reportPossibleCrUseOfGameController({
               error: Error()
@@ -177,89 +212,168 @@ System.register(["__unresolved_0", "cc", "__unresolved_1", "__unresolved_2"], fu
           }
         }
 
+        checkForBuff(treeBlock) {
+          if (this.playerMovement.node.scale.x != treeBlock.getStickSide()) {
+            return;
+          }
+
+          switch (treeBlock.buffType) {
+            case 0:
+              break;
+
+            case 1:
+              treeBlock.playBuffAnimation();
+              (_crd && GameController === void 0 ? (_reportPossibleCrUseOfGameController({
+                error: Error()
+              }), GameController) : GameController).Instance.addTimerTime(3);
+              console.log("Add time: 3");
+              break;
+
+            case 2:
+              treeBlock.playBuffAnimation();
+              (_crd && GameController === void 0 ? (_reportPossibleCrUseOfGameController({
+                error: Error()
+              }), GameController) : GameController).Instance.setTimerTimeScale(0.5, 3);
+              break;
+
+            default:
+          }
+        }
+
         populateStartingTrees() {
-          for (var i = 0; i < 20; i++) {
-            this.pool_Tree.push(instantiate(this.treePrefab));
-            this.pool_Tree[i].active = false;
-            this.pool_Tree[i].setParent(this.node);
-            this.pool_TreeWithStick.push(instantiate(this.treeWithStickPrefab));
-            this.pool_TreeWithStick[i].active = false;
-            this.pool_TreeWithStick[i].setParent(this.node);
-          }
-
-          this.treeArray[0] = this.node.getChildByName("Tree");
+          this.treeArray[0] = this.node.children[0].getComponent(_crd && TreeBlock === void 0 ? (_reportPossibleCrUseOfTreeBlock({
+            error: Error()
+          }), TreeBlock) : TreeBlock);
+          this.treeArray[0].treeManager = this;
           this.treeHeight = this.treeArray[0].getComponent(UITransform).height;
-          this.treeArray[1] = this.findActiveTree(TreeType.Tree);
-          this.treeArray[1].setPosition(0, this.treeHeight * this.treeArray.length, 0);
+          this.treeArray.push(instantiate(this.treeBlockPrefab).getComponent(_crd && TreeBlock === void 0 ? (_reportPossibleCrUseOfTreeBlock({
+            error: Error()
+          }), TreeBlock) : TreeBlock));
+          this.treeArray[1].treeManager = this;
+          this.treeArray[1].node.setParent(this.node);
+          this.treeArray[1].node.setPosition(0, this.treeHeight * this.treeArray.length, 0);
 
-          for (var i = 2; i < 10; i++) {
-            this.addRandomTree();
+          for (var i = 2; i < 20; i++) {
+            this.treeArray.push(instantiate(this.treeBlockPrefab).getComponent(_crd && TreeBlock === void 0 ? (_reportPossibleCrUseOfTreeBlock({
+              error: Error()
+            }), TreeBlock) : TreeBlock));
+            this.treeArray[i].treeManager = this;
+            this.treeArray[i].node.setParent(this.node);
+            this.setupNextTree();
           }
         }
 
-        addRandomTree() {
-          var tree;
+        setupNextTree() {
+          var tree = this.treeArray[this.treeArray.length - 1];
 
-          if (this.treeArray[this.treeArray.length - 1].name == "TreeWithStick") {
-            tree = this.findActiveTree(TreeType.Tree);
+          if (this.treeArray[this.treeArray.length - 2].getStickSide() != 0) {
+            //if tree below has stick
+            tree.setup();
           } else {
-            if (Math.random() > 0.5) {
-              tree = this.findActiveTree(TreeType.Tree);
-            } else {
-              tree = this.findActiveTree(TreeType.TreeWithStick);
-              if (Math.random() > 0.5) tree.setScale(-1, 1, 1); //flip
-              else tree.setScale(1, 1, 1);
-            }
+            tree.setup(1, 'random');
           }
 
-          tree.setPosition(0, this.treeHeight * this.treeArray.length, 0);
-          this.treeArray.push(tree);
+          tree.node.setPosition(0, this.treeHeight * this.treeArray.length, 0);
         }
 
-        findActiveTree(treeType) {
-          if (treeType == TreeType.Tree) {
-            for (var i = 0; i < this.pool_Tree.length; i++) {
-              if (!this.pool_Tree[i].active) {
-                this.pool_Tree[i].active = true;
-                return this.pool_Tree[i];
-              }
-            }
+        setupScaleWithTreeCounter() {
+          this.treeCounter++;
+          (_crd && GameController === void 0 ? (_reportPossibleCrUseOfGameController({
+            error: Error()
+          }), GameController) : GameController).Instance.setDifficultyScale(Math.min(1.7, 1 + this.treeCounter / 100));
+          var tree = this.treeArray[this.treeArray.length - 1];
+          tree.node.setPosition(0, this.treeHeight * this.treeArray.length, 0);
+          let random = Math.random();
 
-            for (var j = 0; j < this.pool_TreeWithStick.length; j++) {
-              if (!this.pool_TreeWithStick[j].active) {
-                this.pool_TreeWithStick[i].active = true;
-                return this.pool_TreeWithStick[j];
-              }
-            }
-          } else if (treeType == TreeType.TreeWithStick) {
-            for (var i = 0; i < this.pool_TreeWithStick.length; i++) {
-              if (!this.pool_TreeWithStick[i].active) {
-                this.pool_TreeWithStick[i].active = true;
-                return this.pool_TreeWithStick[i];
-              }
-            }
-
-            for (var j = 0; j < this.pool_Tree.length; j++) {
-              if (!this.pool_Tree[j].active) {
-                this.pool_Tree[i].active = true;
-                return this.pool_Tree[j];
-              }
-            }
+          if (random < 0.90 || this.isLastBlockNot1x) {
+            this.setup1x();
+            this.isLastBlockNot1x = false;
+          } else if (random < 0.95) {
+            this.setup2x();
+          } else if (random < 0.98) {
+            this.setup3x();
+          } else {
+            this.setup4x();
           }
-
-          return null;
         }
 
-      }, _temp), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "treePrefab", [_dec2], {
+        setup4x() {
+          let tree = this.treeArray[this.treeArray.length - 1];
+          tree.setup(4, 'random', this.hitStates4x, this.stick4x, 'random', this.lantern);
+          this.isLastBlockNot1x = true;
+        }
+
+        setup3x() {
+          let tree = this.treeArray[this.treeArray.length - 1];
+          tree.setup(3, 'random', this.hitStates3x, this.stick3x, 'random', this.lantern);
+          this.isLastBlockNot1x = true;
+        }
+
+        setup2x() {
+          let tree = this.treeArray[this.treeArray.length - 1];
+          tree.setup(2, 'random', this.hitStates2x, this.stick2x, 'random', this.lantern);
+          this.isLastBlockNot1x = true;
+        }
+
+        setup1x() {
+          let tree = this.treeArray[this.treeArray.length - 1];
+          tree.setup(1, 'random', [], [], 'random', this.lantern);
+        }
+
+      }, _temp), (_descriptor = _applyDecoratedDescriptor(_class2.prototype, "treeBlockPrefab", [_dec2], {
         configurable: true,
         enumerable: true,
         writable: true,
         initializer: null
-      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "treeWithStickPrefab", [_dec3], {
+      }), _descriptor2 = _applyDecoratedDescriptor(_class2.prototype, "hitStates2x", [_dec3], {
         configurable: true,
         enumerable: true,
         writable: true,
-        initializer: null
+        initializer: function () {
+          return [];
+        }
+      }), _descriptor3 = _applyDecoratedDescriptor(_class2.prototype, "hitStates3x", [_dec4], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return [];
+        }
+      }), _descriptor4 = _applyDecoratedDescriptor(_class2.prototype, "hitStates4x", [_dec5], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return [];
+        }
+      }), _descriptor5 = _applyDecoratedDescriptor(_class2.prototype, "stick2x", [_dec6], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return [];
+        }
+      }), _descriptor6 = _applyDecoratedDescriptor(_class2.prototype, "stick3x", [_dec7], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return [];
+        }
+      }), _descriptor7 = _applyDecoratedDescriptor(_class2.prototype, "stick4x", [_dec8], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return [];
+        }
+      }), _descriptor8 = _applyDecoratedDescriptor(_class2.prototype, "lantern", [_dec9], {
+        configurable: true,
+        enumerable: true,
+        writable: true,
+        initializer: function () {
+          return [];
+        }
       })), _class2)) || _class));
       /**
        * [1] Class member could be defined like this.

@@ -46,11 +46,12 @@
   "assets/Scripts/GameController.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js",
-      "__unresolved_1": "assets/Scripts/PlayerMovement.js",
+      "__unresolved_1": "assets/Scripts/FloatingNumber.js",
+      "__unresolved_2": "assets/Scripts/PlayerMovement.js",
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js"
     },
     "physicalLocation": "fs/0/assets/Scripts/GameController.js",
-    "mTimestamp": 1645435235774
+    "mTimestamp": 1654026637331
   },
   "assets/Scripts/PlayerMovement.js": {
     "imports": {
@@ -61,24 +62,25 @@
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js"
     },
     "physicalLocation": "fs/0/assets/Scripts/PlayerMovement.js",
-    "mTimestamp": 1645435235980
+    "mTimestamp": 1654026637559
   },
   "assets/Scripts/SoundManager.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js"
     },
     "physicalLocation": "fs/0/assets/Scripts/SoundManager.js",
-    "mTimestamp": 1645435236016
+    "mTimestamp": 1654026637607
   },
   "assets/Scripts/TreeManager.js": {
     "imports": {
       "cc": "quick-pack:/cce/internal/x/cc.js",
       "__unresolved_1": "assets/Scripts/GameController.js",
       "__unresolved_2": "assets/Scripts/SoundManager.js",
+      "__unresolved_3": "assets/Scripts/TreeBlock.js",
       "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js"
     },
     "physicalLocation": "fs/0/assets/Scripts/TreeManager.js",
-    "mTimestamp": 1645435235903
+    "mTimestamp": 1654026637760
   },
   "assets/Scripts/BgmPersist.js": {
     "imports": {
@@ -86,6 +88,37 @@
     },
     "physicalLocation": "fs/0/assets/Scripts/BgmPersist.js",
     "mTimestamp": 1645355698737
+  },
+  "assets/Scripts/TreeBlock.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js"
+    },
+    "physicalLocation": "fs/0/assets/Scripts/TreeBlock.js",
+    "mTimestamp": 1654026637487
+  },
+  "assets/Scripts/TapToPlay.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js",
+      "__unresolved_1": "assets/Scripts/GameController.js",
+      "__unresolved_0": "quick-pack:/cce/internal/code-quality/cr.js"
+    },
+    "physicalLocation": "fs/0/assets/Scripts/TapToPlay.js",
+    "mTimestamp": 1654026637410
+  },
+  "assets/Scripts/BackgroundCanvas.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js"
+    },
+    "physicalLocation": "fs/0/assets/Scripts/BackgroundCanvas.js",
+    "mTimestamp": 1654026637154
+  },
+  "assets/Scripts/FloatingNumber.js": {
+    "imports": {
+      "cc": "quick-pack:/cce/internal/x/cc.js"
+    },
+    "physicalLocation": "fs/0/assets/Scripts/FloatingNumber.js",
+    "mTimestamp": 1654026637377
   },
   "quick-pack:/cce/internal/x/cc.js": {
     "imports": {
@@ -159,25 +192,29 @@
       }
     },
     "physicalLocation": "cce/internal/x/cc.js",
-    "mTimestamp": 1645435235642,
+    "mTimestamp": 1654026636969,
     "isEntry": true,
     "exposeAs": "cce:/internal/x/cc"
   },
   "quick-pack:/cce/internal/x/prerequisite-imports.js": {
     "imports": {
-      "__unresolved_0": "assets/Scripts/GameController.js",
-      "__unresolved_3": "assets/Scripts/TreeManager.js",
-      "__unresolved_1": "assets/Scripts/PlayerMovement.js",
-      "__unresolved_2": "assets/Scripts/SoundManager.js"
+      "__unresolved_0": "assets/Scripts/BackgroundCanvas.js",
+      "__unresolved_2": "assets/Scripts/GameController.js",
+      "__unresolved_1": "assets/Scripts/FloatingNumber.js",
+      "__unresolved_5": "assets/Scripts/TapToPlay.js",
+      "__unresolved_6": "assets/Scripts/TreeBlock.js",
+      "__unresolved_3": "assets/Scripts/PlayerMovement.js",
+      "__unresolved_4": "assets/Scripts/SoundManager.js",
+      "__unresolved_7": "assets/Scripts/TreeManager.js"
     },
     "physicalLocation": "cce/internal/x/prerequisite-imports.js",
-    "mTimestamp": 1645435235672,
+    "mTimestamp": 1654026637045,
     "isEntry": true,
     "exposeAs": "cce:/internal/x/prerequisite-imports"
   },
   "quick-pack:/cce/internal/code-quality/cr.js": {
     "imports": {},
     "physicalLocation": "cce/internal/code-quality/cr.js",
-    "mTimestamp": 1645435236073
+    "mTimestamp": 1654026638284
   }
 }

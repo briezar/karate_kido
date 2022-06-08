@@ -1,7 +1,7 @@
 System.register(["cc"], function (_export, _context) {
   "use strict";
 
-  var _cclegacy, _decorator, Component, AudioSource, AudioClip, randomRangeInt, game, _dec, _dec2, _dec3, _dec4, _class, _class2, _descriptor, _descriptor2, _descriptor3, _class3, _temp, _crd, ccclass, property, SoundManager;
+  var _cclegacy, _decorator, Component, AudioSource, AudioClip, randomRangeInt, _dec, _dec2, _dec3, _dec4, _class, _class2, _descriptor, _descriptor2, _descriptor3, _class3, _temp, _crd, ccclass, property, SoundManager;
 
   function _initializerDefineProperty(target, property, descriptor, context) { if (!descriptor) return; Object.defineProperty(target, property, { enumerable: descriptor.enumerable, configurable: descriptor.configurable, writable: descriptor.writable, value: descriptor.initializer ? descriptor.initializer.call(context) : void 0 }); }
 
@@ -19,7 +19,6 @@ System.register(["cc"], function (_export, _context) {
       AudioSource = _cc.AudioSource;
       AudioClip = _cc.AudioClip;
       randomRangeInt = _cc.randomRangeInt;
-      game = _cc.game;
     }],
     execute: function () {
       _crd = true;
@@ -62,7 +61,6 @@ System.register(["cc"], function (_export, _context) {
         }
 
         onLoad() {
-          game.addPersistRootNode(this.node);
           SoundManager.Instance = this;
           this.audioSource = this.getComponent(AudioSource);
         }
